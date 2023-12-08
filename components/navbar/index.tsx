@@ -72,7 +72,7 @@ export default function Navbar() {
                   <div />
                   <div />
                   <li>
-                    <a className="max-lg:font-semibold  flex items-center p-1 hover:text-neutral-300">
+                    <a className="max-lg:font-semibold cursor-pointer flex items-center p-1 hover:text-neutral-300">
                       Pricing
                     </a>
                   </li>
