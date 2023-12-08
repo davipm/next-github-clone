@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import Container from "@/components/container";
+import ProductNav from "@/components/navbar/product-nav";
+import SolutionNav from "@/components/navbar/solution-nav";
 
 export default function Navbar() {
   const [showNav, setShowNav] = useState(false);
@@ -68,8 +70,8 @@ export default function Navbar() {
             <div className="flex max-lg:flex-col lg:items-center lg:justify-between max-lg:justify-between max-sm:w-10/12 max-sm:mx-auto sm:ml-auto max-lg:w-[320px] lg:w-full max-lg:max-h-[500px]  overflow-y-auto lg:mb-0 max-lg:bg-white max-lg:rounded-lg">
               <nav className="mt-0 px-3 lg:px-6 text-[15.5px] mb-0 max-lg:py-10 max-lg:px-5">
                 <ul className="flex lg:items-center lg:space-x-2 max-lg:flex-col max-lg:text-neutral-700 max-lg:text-xl max-lg:font-medium max-lg:space-y-6 max-lg:h-auto  overflow-y-auto">
-                  <div />
-                  <div />
+                  <ProductNav />
+                  <SolutionNav />
                   <div />
                   <li>
                     <a className="max-lg:font-semibold cursor-pointer flex items-center p-1 hover:text-neutral-300">

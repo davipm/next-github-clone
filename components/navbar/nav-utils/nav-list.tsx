@@ -17,6 +17,7 @@ export default function NavList({ path, path2, submain, main }: Props) {
       href="#"
       onMouseEnter={() => setFocus(true)}
       onMouseLeave={() => setFocus(false)}
+      className="py-3 flex items-center space-x-3 cursor-pointer"
     >
       <svg
         aria-hidden="true"
