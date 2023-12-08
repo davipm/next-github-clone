@@ -26,7 +26,7 @@ export default function SolutionNav() {
           show ? "lg:text-neutral-300" : ""
         }`}
       >
-        Product
+        Solution
         <svg
           opacity="0.5"
           aria-hidden="true"

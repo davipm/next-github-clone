@@ -4,6 +4,7 @@ import { useState } from "react";
 import Container from "@/components/container";
 import ProductNav from "@/components/navbar/product-nav";
 import SolutionNav from "@/components/navbar/solution-nav";
+import OpensorceNav from "@/components/navbar/opensorce-nav";
 
 export default function Navbar() {
   const [showNav, setShowNav] = useState(false);
@@ -72,7 +73,7 @@ export default function Navbar() {
                 <ul className="flex lg:items-center lg:space-x-2 max-lg:flex-col max-lg:text-neutral-700 max-lg:text-xl max-lg:font-medium max-lg:space-y-6 max-lg:h-auto  overflow-y-auto">
                   <ProductNav />
                   <SolutionNav />
-                  <div />
+                  <OpensorceNav />
                   <li>
                     <a className="max-lg:font-semibold cursor-pointer flex items-center p-1 hover:text-neutral-300">
                       Pricing
