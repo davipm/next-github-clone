@@ -1,30 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { useRef } from "react";
+import { useHoverDirty, useMedia } from "react-use";
 import NavList from "@/components/navbar/nav-utils/nav-list";
 import NavListSecondary from "@/components/navbar/nav-utils/nav-list-secondary";
 
 export default function ProductNav() {
-  const [show, setShow] = useState(false);
-
-  const handleMouseEnter = () => {
-    if (window.innerWidth > 1024) {
-      setShow(true);
-    }
-  };
-
-  const handleMouseLever = () => {
-    if (window.innerWidth > 1024) {
-      setShow(false);
-    }
-  };
+  const ref = useRef(null);
+  const isHovering = useHoverDirty(ref);
+  const isWide = useMedia("(min-width: 1024px)");
+  const isOpen = isHovering && isWide;
 
   return (
-    <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLever}>
+    <li ref={ref}>
       <button
         type="button"
         className={`flex items-center p-1 max-lg:font-semibold transition ease-in duration-150 max-lg:justify-between max-lg:w-full ${
-          show ? "lg:text-neutral-300" : ""
+          isOpen ? "lg:text-neutral-300" : ""
         }`}
       >
         Product
@@ -38,7 +30,7 @@ export default function ProductNav() {
           width="16"
           data-view-component="true"
           className={`ml-1 transition-all ease-in duration-200 max-lg:scale-x-125 ${
-            show ? "lg:mt-2 opacity-40 max-lg:0" : "mt-0 max-lg:-rotate-90"
+            isOpen ? "lg:mt-2 opacity-40 max-lg:0" : "mt-0 max-lg:-rotate-90"
           }`}
         >
           <path d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"></path>
@@ -47,7 +39,7 @@ export default function ProductNav() {
 
       <div
         className={`relative lg:absolute lg:flex -ml-5 bg-white rounded-md lg:py-4 py-2 transition ease-in duration-150 ${
-          show ? "opacity-100" : "opacity-0 invisible max-lg:hidden"
+          isOpen ? "opacity-100" : "opacity-0 invisible max-lg:hidden"
         }`}
       >
         <div className="lg:px-4 lg:border-r-[1px] mb-4 lg:mb-0 lg:pr-10">
