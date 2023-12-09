@@ -1,15 +1,13 @@
 "use client";
 
 import { useRef } from "react";
-import { useHoverDirty, useMedia } from "react-use";
+import { useShow } from "@/hooks";
 import NavList from "@/components/navbar/nav-utils/nav-list";
 import NavListSecondary from "@/components/navbar/nav-utils/nav-list-secondary";
 
 export default function ProductNav() {
   const ref = useRef(null);
-  const isHovering = useHoverDirty(ref);
-  const isWide = useMedia("(min-width: 1024px)");
-  const isOpen = isHovering && isWide;
+  const isOpen = useShow(ref);
 
   return (
     <li ref={ref}>

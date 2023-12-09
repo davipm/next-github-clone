@@ -1,13 +1,11 @@
 "use client";
 
 import { useRef } from "react";
-import { useHoverDirty, useMedia } from "react-use";
+import { useShow } from "@/hooks";
 
 export default function OpensorceNav() {
   const ref = useRef(null);
-  const isHovering = useHoverDirty(ref);
-  const isWide = useMedia("(min-width: 1024px)");
-  const isOpen = isHovering && isWide;
+  const isOpen = useShow(ref);
 
   return (
     <li ref={ref}>
