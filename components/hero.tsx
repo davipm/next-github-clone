@@ -8,7 +8,7 @@ export default function Hero() {
   const [hovered2, setHovered2] = useState(false);
 
   return (
-    <div className="relative max-w-[1280px] lg:pt-32 md:px-10 mx-auto pt-16 px-3">
+    <div className="relative max-w-[1280px] lg:pt-32 md:px-10 mx-auto pt-16">
       <motion.img
         src="https://github.githubassets.com/images/modules/site/home-campaign/hero-drone.webp"
         alt="hero drone"
@@ -47,6 +47,8 @@ export default function Hero() {
               <span className="absolute left-0 top-0 w-6 h-full filter blur-lg bg-[#dd7df7]" />
             </span>
           </div>
+
+          <div className="max-md:w-[2px] w-[3px] h-[450px] max-sm:h-[750px] max-ssm:h-[900px] max-sssm:h-[1150px] line rounded-md" />
         </div>
 
         <div className="absolute pt-32 mt-28 max-md:px-4 ml-4 md:ml-12">
