@@ -2,7 +2,6 @@
 
 import { useRef } from "react";
 import NavListSecondary from "@/components/navbar/nav-utils/nav-list-secondary";
-import { useHoverDirty, useMedia } from "react-use";
 import { useShow } from "@/hooks";
 
 export default function SolutionNav() {

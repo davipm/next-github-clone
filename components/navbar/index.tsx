@@ -23,7 +23,7 @@ export default function Navbar() {
                 Sing Up
               </a>
             </div>
-            <a className="" href="https://github.com">
+            <a className="#" href="https://github.com">
               <svg
                 height="32"
                 aria-hidden="true"

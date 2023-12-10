@@ -1,12 +1,8 @@
 "use client";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
 
 export default function Hero() {
-  const [hovered, setHovered] = useState(false);
-  const [hovered2, setHovered2] = useState(false);
-
   return (
     <div className="relative max-w-[1280px] lg:pt-32 md:px-10 mx-auto pt-16">
       <motion.img
@@ -52,10 +48,8 @@ export default function Hero() {
         </div>
 
         <div className="relative z-20 pt-32 mt-28 max-md:px-4 ml-4 md:ml-12">
-          <div className="relative md:top-20 mb-[24px]">
+          <div className="group relative md:top-20 mb-[24px]">
             <a
-              onMouseEnter={() => setHovered(true)}
-              onMouseLeave={() => setHovered(false)}
               href="#"
               className="border border-neutral-600 copilot rounded-full inline-block"
             >
@@ -78,9 +72,7 @@ export default function Hero() {
                 <div className="ml-auto">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className={`text-white transition ease-in duration-150 ${
-                      hovered ? "translate-x-0 " : "-translate-x-1"
-                    }`}
+                    className="text-white transition ease-in duration-150 -translate-x-1 group-hover:translate-x-0"
                     width="16"
                     height="16"
                     viewBox="0 0 16 16"
@@ -89,16 +81,14 @@ export default function Hero() {
                     <path
                       fill="currentColor"
                       d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"
-                    ></path>
+                    />
                     <path
-                      className={`text-white transition ease-in duration-150 ${
-                        hovered ? "opacity-100" : "opacity-0 "
-                      }`}
+                      className="text-white transition ease-in duration-150 -translate-x-1 opacity-0 group-hover:opacity-100"
                       stroke="currentColor"
                       d="M1.75 8H11"
                       strokeWidth="1.5"
                       strokeLinecap="round"
-                    ></path>
+                    />
                   </svg>
                 </div>
               </div>
@@ -139,19 +129,17 @@ export default function Hero() {
                 </button>
               </div>
             </form>
-            <span className="border-t-[1px] md:border-l-[1px] border-neutral-700 md:mx-10 mb-3 md:mb-0"></span>
+
+            <span className="border-t-[1px] md:border-l-[1px] border-neutral-700 md:mx-10 mb-3 md:mb-0" />
+
             <a
-              onMouseEnter={() => setHovered(true)}
-              onMouseLeave={() => setHovered(false)}
-              href=""
-              className="flex items-center w-full select-none md:w-auto justify-center text-[16px] py-3 px-5 max-md:mt-4 rounded-md border-[#ae88f9] border-[1.5px] text-white"
+              href="#"
+              className="flex items-center group w-full select-none md:w-auto justify-center text-[16px] py-3 px-5 max-md:mt-4 rounded-md border-[#ae88f9] border-[1.5px] text-white"
             >
               Start a free enterprise trial
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className={`arrow-symbol-mktg text-white ml-3 transition ease-in duration-150 ${
-                  hovered ? "translate-x-0" : "-translate-x-1"
-                }`}
+                className="arrow-symbol-mktg text-white ml-3 transition ease-in duration-150 -translate-x-1 group-hover:translate-x-0"
                 width="20"
                 height="20"
                 viewBox="0 0 16 16"
@@ -160,16 +148,14 @@ export default function Hero() {
                 <path
                   fill="currentColor"
                   d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"
-                ></path>
+                />
                 <path
-                  className={`text-white transition ease-in duration-150 ${
-                    hovered ? "opacity-100" : "opacity-0 "
-                  }`}
+                  className="text-white transition ease-in duration-150 opacity-0 group-hover:opacity-100"
                   stroke="currentColor"
                   d="M1.75 8H11"
                   strokeWidth="1.5"
                   strokeLinecap="round"
-                ></path>
+                />
               </svg>
             </a>
           </div>
