@@ -1,7 +1,5 @@
 "use client";
 
-import { useState } from "react";
-
 interface Props {
   main: string;
   submain: string;
@@ -10,14 +8,10 @@ interface Props {
 }
 
 export default function NavList({ path, path2, submain, main }: Props) {
-  const [focus, setFocus] = useState(false);
-
   return (
     <a
       href="#"
-      onMouseEnter={() => setFocus(true)}
-      onMouseLeave={() => setFocus(false)}
-      className="py-3 flex items-center space-x-3 cursor-pointer"
+      className="group py-3 flex items-center space-x-3 cursor-pointer"
     >
       <svg
         aria-hidden="true"
@@ -27,24 +21,14 @@ export default function NavList({ path, path2, submain, main }: Props) {
         version="1.1"
         width="24"
         data-view-component="true"
-        className={`mr-3 transition ease-in duration-100  ${
-          focus ? "text-blue-600" : "text-neutral-500"
-        }`}
+        className="mr-3 transition ease-in duration-100 text-neutral-500 group-hover:text-blue-600"
       >
         <path d={path}></path>
         <path d={path2}></path>
       </svg>
 
-      <div
-        className={`${
-          focus ? "text-blue-600" : "text-neutral-500"
-        } transition ease-in duration-100 text-[14px]`}
-      >
-        <div
-          className={`font-semibold transition ease-in duration-100 ${
-            focus ? "text-blue-600" : "text-neutral-800"
-          } text-base leading-5`}
-        >
+      <div className="transition ease-in duration-100 text-sm text-neutral-500 group-hover:text-blue-600">
+        <div className="font-semibold transition ease-in duration-100 text-base leading-5 text-neutral-500 group-hover:text-blue-600">
           {main}
         </div>
         {submain}
