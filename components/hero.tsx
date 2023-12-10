@@ -22,7 +22,7 @@ export default function Hero() {
       />
 
       <div className="flex">
-        <div className="relative">
+        <div className="absolute">
           <img
             src="https://github.githubassets.com/images/modules/site/home-campaign/lines-hero.svg"
             alt="lines hero"
@@ -48,10 +48,10 @@ export default function Hero() {
             </span>
           </div>
 
-          <div className="max-md:w-[2px] w-[3px] h-[450px] max-sm:h-[750px] max-ssm:h-[900px] max-sssm:h-[1150px] line rounded-md" />
+          <div className="bg-line-gradient ml-[11px] max-md:w-[2px] w-[3px] h-[450px] max-md:h-[650px] max-sm:h-[750px] max-ssm:h-[900px] max-sssm:h-[1150px] line rounded-md" />
         </div>
 
-        <div className="absolute pt-32 mt-28 max-md:px-4 ml-4 md:ml-12">
+        <div className="relative z-20 pt-32 mt-28 max-md:px-4 ml-4 md:ml-12">
           <div className="relative md:top-20 mb-[24px]">
             <a
               onMouseEnter={() => setHovered(true)}
@@ -133,7 +133,7 @@ export default function Hero() {
 
                 <button
                   type="button"
-                  className="mb-10 md:mb-0 py-3 w-full home-campaign-signup-button text-[16px] max-md:rounded-md md:rounded-e-md text-white font-semibold"
+                  className="select-none mb-10 md:mb-0 py-3 w-full home-campaign-signup-button text-[16px] max-md:rounded-md md:rounded-e-md text-white font-semibold transition-all duration-300 hover:opacity-90"
                 >
                   Sign up for GitHub
                 </button>
@@ -144,7 +144,7 @@ export default function Hero() {
               onMouseEnter={() => setHovered(true)}
               onMouseLeave={() => setHovered(false)}
               href=""
-              className="flex items-center w-full md:w-auto justify-center text-[16px] py-3 px-5 max-md:mt-4 rounded-md border-[#ae88f9] border-[1.5px] text-white"
+              className="flex items-center w-full select-none md:w-auto justify-center text-[16px] py-3 px-5 max-md:mt-4 rounded-md border-[#ae88f9] border-[1.5px] text-white"
             >
               Start a free enterprise trial
               <svg
