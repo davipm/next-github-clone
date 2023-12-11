@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer className="relative pt-14 break-words">
@@ -34,6 +36,215 @@ export default function Footer() {
               </a>
             </div>
           </div>
+          <div className="lg:flex w-full justify-between grid md:grid-cols-4 grid-cols-2 gap-6">
+            <div className="text-[#7d8590]">
+              <h2 className="font-medium mb-4 font-mono">Product</h2>
+
+              <ul className="text-sm">
+                <li className="mb-4">
+                  <a href="#">Features</a>
+                </li>
+                <li className="mb-4">
+                  <a href="#">Security</a>
+                </li>
+                <li className="mb-4">
+                  <a href="#">Team</a>
+                </li>
+                <li className="mb-4">
+                  <a href="#">Enterprise</a>
+                </li>
+                <li className="mb-4">
+                  <a href="#">Custom Stories</a>
+                </li>
+                <li className="mb-4">
+                  <a href="#">The ReadME Project</a>
+                </li>
+                <li className="mb-4">
+                  <a href="#">Pricing</a>
+                </li>
+                <li className="mb-4">
+                  <a href="#">Resources</a>
+                </li>
+                <li className="mb-4">
+                  <a href="#">Roadmap</a>
+                </li>
+                <li className="mb-4">
+                  <a href="#">Compare GitHub</a>
+                </li>
+              </ul>
+            </div>
+            <div className="text-[#7d8590]">
+              <h2 className="font-medium mb-4 font-mono">Platform</h2>
+
+              <ul className="text-sm">
+                <li className="mb-4">
+                  <a href="#">Developer API</a>
+                </li>
+                <li className="mb-4">
+                  <a href="#">Partners</a>
+                </li>
+                <li className="mb-4">
+                  <a href="#">Electron</a>
+                </li>
+                <li className="mb-4">
+                  <a href="#">GitHub Desktop</a>
+                </li>
+              </ul>
+            </div>
+            <div className="text-[#7d8590]">
+              <h2 className="font-medium mb-4 font-mono">Product</h2>
+
+              <ul className="text-sm">
+                <li className="mb-4">
+                  <a href="#">Docs</a>
+                </li>
+                <li className="mb-4">
+                  <a href="#">Community Forum</a>
+                </li>
+                <li className="mb-4">
+                  <a href="#">Professional Services</a>
+                </li>
+                <li className="mb-4">
+                  <a href="#">Premium Support</a>
+                </li>
+                <li className="mb-4">
+                  <a href="#">Skill</a>
+                </li>
+                <li className="mb-4">
+                  <a href="#">Status</a>
+                </li>
+                <li className="mb-4">
+                  <a href="#">Contact GitHub</a>
+                </li>
+              </ul>
+            </div>
+            <div className="text-[#7d8590]">
+              <h2 className="font-medium mb-4 font-mono">Company</h2>
+
+              <ul className="text-sm">
+                <li className="mb-4">
+                  <a href="#">About</a>
+                </li>
+                <li className="mb-4">
+                  <a href="#">Blog</a>
+                </li>
+                <li className="mb-4">
+                  <a href="#">Careers</a>
+                </li>
+                <li className="mb-4">
+                  <a href="#">Press</a>
+                </li>
+                <li className="mb-4">
+                  <a href="#">Inclusion</a>
+                </li>
+                <li className="mb-4">
+                  <a href="#">Social Impact</a>
+                </li>
+                <li className="mb-4">
+                  <a href="#">Shop</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-[#161b22]">
+        <div className="max-w-[1280px] mx-auto text-[12px] md:flex flex-row-reverse py-6 justify-between items-center px-4">
+          <ul className="flex items-center max-md:mb-4">
+            <li className="mr-4">
+              <a href="#">
+                <Image
+                  src="https://github.githubassets.com/images/modules/site/icons/footer/twitter.svg"
+                  alt="Twitter"
+                  width={22}
+                  height={18}
+                  className="block"
+                />
+              </a>
+            </li>
+            <li className="mr-4">
+              <a href="#">
+                <Image
+                  src="https://github.githubassets.com/images/modules/site/icons/footer/facebook.svg"
+                  alt="Twitter"
+                  width={22}
+                  height={18}
+                  className="block"
+                />
+              </a>
+            </li>
+            <li className="mr-4">
+              <a href="#">
+                <Image
+                  src="https://github.githubassets.com/images/modules/site/icons/footer/linkedin.svg"
+                  alt="Twitter"
+                  width={22}
+                  height={18}
+                  className="block"
+                />
+              </a>
+            </li>
+            <li className="mr-4">
+              <a href="#">
+                <Image
+                  src="https://github.githubassets.com/images/modules/site/icons/footer/youtube.svg"
+                  alt="Twitter"
+                  width={22}
+                  height={18}
+                  className="block"
+                />
+              </a>
+            </li>
+            <li className="mr-4">
+              <a href="#">
+                <Image
+                  src="https://github.githubassets.com/images/modules/site/icons/footer/twitch.svg"
+                  alt="Twitter"
+                  width={22}
+                  height={18}
+                  className="block"
+                />
+              </a>
+            </li>
+            <li className="mr-4">
+              <a href="#">
+                <Image
+                  src="https://github.githubassets.com/images/modules/site/icons/footer/tiktok.svg"
+                  alt="Twitter"
+                  width={22}
+                  height={18}
+                  className="block"
+                />
+              </a>
+            </li>
+            <li className="mr-4">
+              <a href="#">
+                <Image
+                  src="https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg"
+                  alt="Twitter"
+                  width={22}
+                  height={18}
+                  className="block"
+                />
+              </a>
+            </li>
+          </ul>
+          <ul className="flex items-center mb-4 sm:mb-0 text-[#7d8590] flex-wrap">
+            <li className="mr-3">© {new Date().getFullYear()} GitHub, Inc.</li>
+            <li className="mr-3">
+              <a href="#">Terms</a>
+            </li>
+            <li className="mr-3">
+              <a href="#">Privacy (Updated 08/2022)</a>
+            </li>
+            <li className="mr-3">
+              <a href="#">Sitemap</a>
+            </li>
+            <li className="mr-3">
+              <a href="#">What is Git?</a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
