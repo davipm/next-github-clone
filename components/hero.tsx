@@ -55,10 +55,12 @@ export default function Hero() {
               className="border border-neutral-600 copilot rounded-full inline-block"
             >
               <div className="flex items-center p-3 px-5">
-                <img
+                <Image
                   src="https://github.githubassets.com/images/modules/site/eyebrow-banner-icon-copilot-x.svg"
                   alt="copilot"
-                  className="w-[44px] h-[44px] block flex-grow-0 flex-shrink-0 mr-6 max-md:mr-3"
+                  width={44}
+                  height={44}
+                  className="block flex-grow-0 flex-shrink-0 mr-2"
                 />
 
                 <div className="md:pr-5 pr-3 md:mr-2 md:pl-2">
@@ -165,43 +167,62 @@ export default function Hero() {
             <p className="text-base leading-[24px] text-[#7d8590]">
               Trusted by the world&apos;s leading&nbsp;organizations&nbsp;↘︎
             </p>
-            <div className="flex flex-wrap justify-between items-center">
-              <img
-                src="https://github.githubassets.com/images/modules/site/home-campaign/logos/stripe.svg"
-                alt="Stripe logo"
-                height="44"
-                className="my-3 scale-90"
-              />
-              <img
-                src="https://github.githubassets.com/images/modules/site/home-campaign/logos/pinterest.svg"
-                alt="Pinterest logo"
-                height="44"
-                className="my-3 scale-90"
-              />
-              <img
-                src="https://github.githubassets.com/images/modules/site/home-campaign/logos/kpmg.svg"
-                alt="KPMG logo"
-                height="44"
-                className="my-3 scale-90"
-              />
-              <img
-                src="https://github.githubassets.com/images/modules/site/home-campaign/logos/mercedes.svg"
-                alt="Mercedes-Benz logo"
-                height="44"
-                className="my-3 w-[200px]"
-              />
-              <img
-                src="https://github.githubassets.com/images/modules/site/home-campaign/logos/pg.svg"
-                alt="P&amp;G logo"
-                height="32"
-                className="my-3 scale-90"
-              />
-              <img
-                src="https://github.githubassets.com/images/modules/site/home-campaign/logos/telus.svg"
-                alt="Telus logo"
-                height="32"
-                className="my-3 scale-90"
-              />
+
+            <div className="flex flex-wrap justify-between items-center py-4 gap-5">
+              <div className="relative w-[150px] h-[44px]">
+                <Image
+                  src="https://github.githubassets.com/images/modules/site/home-campaign/logos/stripe.svg"
+                  alt="Stripe logo"
+                  title="Stripe logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+
+              <div className="relative w-[150px] h-[44px]">
+                <Image
+                  src="https://github.githubassets.com/images/modules/site/home-campaign/logos/pinterest.svg"
+                  alt="Pinterest logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+
+              <div className="relative w-[150px] h-[44px]">
+                <Image
+                  src="https://github.githubassets.com/images/modules/site/home-campaign/logos/kpmg.svg"
+                  alt="KPMG logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+
+              <div className="relative w-[150px] h-[44px]">
+                <Image
+                  src="https://github.githubassets.com/images/modules/site/home-campaign/logos/mercedes.svg"
+                  alt="Mercedes-Benz logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+
+              <div className="relative w-[150px] h-[44px]">
+                <Image
+                  src="https://github.githubassets.com/images/modules/site/home-campaign/logos/pg.svg"
+                  alt="P&amp;G logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+
+              <div className="relative w-[150px] h-[44px]">
+                <Image
+                  src="https://github.githubassets.com/images/modules/site/home-campaign/logos/telus.svg"
+                  alt="Telus logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
             </div>
           </div>
         </div>

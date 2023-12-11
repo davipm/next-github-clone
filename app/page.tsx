@@ -1,6 +1,7 @@
 import Navbar from "@/components/navbar";
 import Hero from "@/components/hero";
 import Footer from "@/components/footer";
+import Productivity from "@/components/productivity";
 
 export default function Home() {
   return (
@@ -22,6 +23,10 @@ export default function Home() {
 
         <div className="px-3">
           <Hero />
+        </div>
+
+        <div id="productivity" className="px-4 pt-8 overflow-hidden">
+          <Productivity />
         </div>
       </div>
 
