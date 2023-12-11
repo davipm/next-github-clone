@@ -38,7 +38,7 @@ export default function OpensorceNav() {
           isOpen ? "opacity-100 visible" : "opacity-0 hidden"
         }`}
       >
-        <div className="lg:border-b-[1px] mb-4 pb-6 pt-4 w-full">
+        <div className="lg:border-b mb-4 pb-6 pt-4 w-full">
           <span className="text-neutral-800 font-semibold text-base hover:text-blue-600 cursor-pointer">
             GitHub Sponsers{" "}
             <p className="text-sm font-normal text-neutral-500">
@@ -46,7 +46,7 @@ export default function OpensorceNav() {
             </p>
           </span>
         </div>
-        <div className="lg:border-b-[1px] mb-4 pb-6 pt-0 w-full">
+        <div className="lg:border-b mb-4 pb-6 pt-0 w-full">
           <span className="text-neutral-800 font-semibold text-base hover:text-blue-600 cursor-pointer">
             The ReadMe Projects{" "}
             <p className="text-sm font-normal text-neutral-500">
