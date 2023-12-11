@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -19,11 +20,11 @@ export default function Hero() {
 
       <div className="flex">
         <div className="absolute">
-          <img
+          <Image
             src="https://github.githubassets.com/images/modules/site/home-campaign/lines-hero.svg"
             alt="lines hero"
-            aria-hidden="true"
-            className="w-[437px] h-[637px]"
+            width={437}
+            height={637}
           />
 
           <div className="mx-auto my-3">
