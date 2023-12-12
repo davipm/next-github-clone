@@ -43,34 +43,54 @@ export default function Footer() {
 
               <ul className="text-sm">
                 <li className="mb-4">
-                  <a href="#">Features</a>
+                  <a href="#" className="inline-block hover:underline">
+                    Features
+                  </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#">Security</a>
+                  <a href="#" className="inline-block hover:underline">
+                    Security
+                  </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#">Team</a>
+                  <a href="#" className="inline-block hover:underline">
+                    Team
+                  </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#">Enterprise</a>
+                  <a href="#" className="inline-block hover:underline">
+                    Enterprise
+                  </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#">Custom Stories</a>
+                  <a href="#" className="inline-block hover:underline">
+                    Custom Stories
+                  </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#">The ReadME Project</a>
+                  <a href="#" className="inline-block hover:underline">
+                    The ReadME Project
+                  </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#">Pricing</a>
+                  <a href="#" className="inline-block hover:underline">
+                    Pricing
+                  </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#">Resources</a>
+                  <a href="#" className="inline-block hover:underline">
+                    Resources
+                  </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#">Roadmap</a>
+                  <a href="#" className="inline-block hover:underline">
+                    Roadmap
+                  </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#">Compare GitHub</a>
+                  <a href="#" className="inline-block hover:underline">
+                    Compare GitHub
+                  </a>
                 </li>
               </ul>
             </div>
@@ -79,16 +99,24 @@ export default function Footer() {
 
               <ul className="text-sm">
                 <li className="mb-4">
-                  <a href="#">Developer API</a>
+                  <a href="#" className="inline-block hover:underline">
+                    Developer API
+                  </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#">Partners</a>
+                  <a href="#" className="inline-block hover:underline">
+                    Partners
+                  </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#">Electron</a>
+                  <a href="#" className="inline-block hover:underline">
+                    Electron
+                  </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#">GitHub Desktop</a>
+                  <a href="#" className="inline-block hover:underline">
+                    GitHub Desktop
+                  </a>
                 </li>
               </ul>
             </div>
@@ -97,25 +125,39 @@ export default function Footer() {
 
               <ul className="text-sm">
                 <li className="mb-4">
-                  <a href="#">Docs</a>
+                  <a href="#" className="inline-block hover:underline">
+                    Docs
+                  </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#">Community Forum</a>
+                  <a href="#" className="inline-block hover:underline">
+                    Community Forum
+                  </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#">Professional Services</a>
+                  <a href="#" className="inline-block hover:underline">
+                    Professional Services
+                  </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#">Premium Support</a>
+                  <a href="#" className="inline-block hover:underline">
+                    Premium Support
+                  </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#">Skill</a>
+                  <a href="#" className="inline-block hover:underline">
+                    Skill
+                  </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#">Status</a>
+                  <a href="#" className="inline-block hover:underline">
+                    Status
+                  </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#">Contact GitHub</a>
+                  <a href="#" className="inline-block hover:underline">
+                    Contact GitHub
+                  </a>
                 </li>
               </ul>
             </div>
@@ -124,25 +166,39 @@ export default function Footer() {
 
               <ul className="text-sm">
                 <li className="mb-4">
-                  <a href="#">About</a>
+                  <a href="#" className="inline-block hover:underline">
+                    About
+                  </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#">Blog</a>
+                  <a href="#" className="inline-block hover:underline">
+                    Blog
+                  </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#">Careers</a>
+                  <a href="#" className="inline-block hover:underline">
+                    Careers
+                  </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#">Press</a>
+                  <a href="#" className="inline-block hover:underline">
+                    Press
+                  </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#">Inclusion</a>
+                  <a href="#" className="inline-block hover:underline">
+                    Inclusion
+                  </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#">Social Impact</a>
+                  <a href="#" className="inline-block hover:underline">
+                    Social Impact
+                  </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#">Shop</a>
+                  <a href="#" className="inline-block hover:underline">
+                    Shop
+                  </a>
                 </li>
               </ul>
             </div>
@@ -234,16 +290,24 @@ export default function Footer() {
           <ul className="flex items-center mb-4 sm:mb-0 text-[#7d8590] flex-wrap">
             <li className="mr-3">© {new Date().getFullYear()} GitHub, Inc.</li>
             <li className="mr-3">
-              <a href="#">Terms</a>
+              <a href="#" className="inline-block hover:underline">
+                Terms
+              </a>
             </li>
             <li className="mr-3">
-              <a href="#">Privacy (Updated 08/2022)</a>
+              <a href="#" className="inline-block hover:underline">
+                Privacy (Updated 08/2022)
+              </a>
             </li>
             <li className="mr-3">
-              <a href="#">Sitemap</a>
+              <a href="#" className="inline-block hover:underline">
+                Sitemap
+              </a>
             </li>
             <li className="mr-3">
-              <a href="#">What is Git?</a>
+              <a href="#" className="inline-block hover:underline">
+                What is Git?
+              </a>
             </li>
           </ul>
         </div>
