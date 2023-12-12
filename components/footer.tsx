@@ -1,12 +1,5 @@
 import { FaXTwitter } from "react-icons/fa6";
-import {
-  FaFacebookSquare,
-  FaLinkedinIn,
-  FaYoutube,
-  FaTwitch,
-  FaTiktok,
-  FaGithub,
-} from "react-icons/fa";
+import { FaFacebookSquare, FaLinkedinIn, FaYoutube, FaTwitch, FaTiktok, FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -30,16 +23,9 @@ export default function Footer() {
             </a>
 
             <div className="text-white">
-              <h2 className="mt-6 text-base font-semibold">
-                Subscribe to our newsletter
-              </h2>
-              <p className="text-sm text-[#7d8590] mb-6">
-                Get product updates, company news, and more.
-              </p>
-              <a
-                href="#"
-                className="mb-6 px-6 py-3 text-lg font-semibold border border-gray-400 rounded-lg"
-              >
+              <h2 className="mt-6 text-base font-semibold">Subscribe to our newsletter</h2>
+              <p className="text-sm text-[#7d8590] mb-6">Get product updates, company news, and more.</p>
+              <a href="#" className="mb-6 px-6 py-3 text-lg font-semibold border border-gray-400 rounded-lg">
                 Subscribe
               </a>
             </div>
@@ -219,10 +205,7 @@ export default function Footer() {
           <ul className="flex items-center max-md:mb-4">
             <li className="mr-4">
               <a href="#">
-                <FaXTwitter
-                  size={22}
-                  className="transition-colors duration-200 text-gray-400 hover:text-gray-700"
-                />
+                <FaXTwitter size={22} className="transition-colors duration-200 text-gray-400 hover:text-gray-700" />
               </a>
             </li>
             <li className="mr-4">
@@ -235,42 +218,27 @@ export default function Footer() {
             </li>
             <li className="mr-4">
               <a href="#">
-                <FaLinkedinIn
-                  size={22}
-                  className="transition-colors duration-200 text-gray-400 hover:text-gray-700"
-                />
+                <FaLinkedinIn size={22} className="transition-colors duration-200 text-gray-400 hover:text-gray-700" />
               </a>
             </li>
             <li className="mr-4">
               <a href="#">
-                <FaYoutube
-                  size={22}
-                  className="transition-colors duration-200 text-gray-400 hover:text-gray-700"
-                />
+                <FaYoutube size={22} className="transition-colors duration-200 text-gray-400 hover:text-gray-700" />
               </a>
             </li>
             <li className="mr-4">
               <a href="#">
-                <FaTwitch
-                  size={22}
-                  className="transition-colors duration-200 text-gray-400 hover:text-gray-700"
-                />
+                <FaTwitch size={22} className="transition-colors duration-200 text-gray-400 hover:text-gray-700" />
               </a>
             </li>
             <li className="mr-4">
               <a href="#">
-                <FaTiktok
-                  size={22}
-                  className="transition-colors duration-200 text-gray-400 hover:text-gray-700"
-                />
+                <FaTiktok size={22} className="transition-colors duration-200 text-gray-400 hover:text-gray-700" />
               </a>
             </li>
             <li className="mr-4">
               <a href="#">
-                <FaGithub
-                  size={22}
-                  className="transition-colors duration-200 text-gray-400 hover:text-gray-700"
-                />
+                <FaGithub size={22} className="transition-colors duration-200 text-gray-400 hover:text-gray-700" />
               </a>
             </li>
           </ul>

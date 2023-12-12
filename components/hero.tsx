@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <div className="relative max-w-[1280px] lg:pt-32 md:px-10 mx-auto pt-16">
       <motion.img
-        src="https://github.githubassets.com/images/modules/site/home-campaign/hero-drone.webp"
+        src="/hero-drone.png"
         alt="hero drone"
         className="absolute top-28 w-1/4 h-auto right-0 xl:right-0"
         animate={{ y: [-25, 0, -25] }}
@@ -23,12 +23,7 @@ export default function Hero() {
 
       <div className="flex">
         <div className="absolute">
-          <Image
-            src="https://github.githubassets.com/images/modules/site/home-campaign/lines-hero.svg"
-            alt="lines hero"
-            width={437}
-            height={637}
-          />
+          <Image src="/lines-hero.svg" alt="lines hero" width={437} height={637} />
 
           <div className="mx-auto my-3">
             <span className="relative z-10">
@@ -42,13 +37,10 @@ export default function Hero() {
 
         <div className="relative z-20 pt-32 mt-28 max-md:px-4 ml-4 md:ml-12">
           <div className="group relative md:top-20 mb-[24px]">
-            <a
-              href="#"
-              className="border border-neutral-600 copilot rounded-full inline-block"
-            >
+            <a href="#" className="border border-neutral-600 copilot rounded-full inline-block">
               <div className="flex items-center p-3 px-5">
                 <Image
-                  src="https://github.githubassets.com/images/modules/site/eyebrow-banner-icon-copilot-x.svg"
+                  src="/eyebrow-banner-icon-copilot-x.svg"
                   alt="copilot"
                   width={44}
                   height={44}
@@ -76,8 +68,8 @@ export default function Hero() {
           </h1>
 
           <p className="relative z-10 text-[24px] md:text-[28px] lg:text-[32px] leading-[30px] md:leading-[36px] lg:leading-[44px] mb-5 md:mb-12 md:w-10/12 lg:w-9/12 text-[#7d8590]">
-            Harnessed for productivity. Designed for collaboration. Celebrated
-            for built-in security. Welcome to the platform developers&nbsp;love.
+            Harnessed for productivity. Designed for collaboration. Celebrated for built-in security. Welcome to the
+            platform developers&nbsp;love.
           </p>
 
           <div className="flex lg:w-11/12 md:space-x-5 max-md:flex-col">
