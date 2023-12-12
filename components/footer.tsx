@@ -36,6 +36,7 @@ export default function Footer() {
               </a>
             </div>
           </div>
+
           <div className="lg:flex w-full justify-between grid md:grid-cols-4 grid-cols-2 gap-6">
             <div className="text-[#7d8590]">
               <h2 className="font-medium mb-4 font-mono">Product</h2>
