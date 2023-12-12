@@ -168,7 +168,7 @@ export default function Hero() {
               Trusted by the world&apos;s leading&nbsp;organizations&nbsp;↘︎
             </p>
 
-            <div className="flex flex-wrap justify-between items-center py-4 gap-5">
+            <div className="flex flex-wrap justify-center xl:justify-between items-center py-4 gap-5">
               <div className="relative w-[150px] h-[44px]">
                 <Image
                   src="https://github.githubassets.com/images/modules/site/home-campaign/logos/stripe.svg"

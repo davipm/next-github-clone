@@ -11,7 +11,7 @@ export default function Productivity() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.3 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             className="relative"
           >
             <svg
@@ -34,6 +34,7 @@ export default function Productivity() {
             initial={{ height: 0 }}
             whileInView={{ height: "100%" }}
             transition={{ duration: 0.4, delay: 0.6 }}
+            viewport={{ once: true }}
             className="h-full w-[3px] mt-7 rounded-md bg-gradient-to-b from-[#7ee787]"
           />
         </div>
@@ -42,7 +43,7 @@ export default function Productivity() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.3 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             className="text-[20px] md:text-2xl mb-7 font-medium text-white js-build-in-item build-in-slideX-left build-in-animate delay-200"
           >
             Productivity
@@ -51,7 +52,7 @@ export default function Productivity() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.3 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             className="text-[28px] md:text-[40px] delay-300 max-md:leading-8 max-lg:leading-10 lg:text-5xl mb-7 font-medium text-white js-build-in-item build-in-slideX-left build-in-animate"
           >
             <span className="text-[#7ee787]">
