@@ -1,4 +1,12 @@
-import Image from "next/image";
+import { FaXTwitter } from "react-icons/fa6";
+import {
+  FaFacebookSquare,
+  FaLinkedinIn,
+  FaYoutube,
+  FaTwitch,
+  FaTiktok,
+  FaGithub,
+} from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -211,78 +219,57 @@ export default function Footer() {
           <ul className="flex items-center max-md:mb-4">
             <li className="mr-4">
               <a href="#">
-                <Image
-                  src="https://github.githubassets.com/images/modules/site/icons/footer/twitter.svg"
-                  alt="Twitter"
-                  width={22}
-                  height={18}
-                  className="block"
+                <FaXTwitter
+                  size={22}
+                  className="transition-colors duration-200 text-gray-400 hover:text-gray-700"
                 />
               </a>
             </li>
             <li className="mr-4">
               <a href="#">
-                <Image
-                  src="https://github.githubassets.com/images/modules/site/icons/footer/facebook.svg"
-                  alt="Twitter"
-                  width={22}
-                  height={18}
-                  className="block"
+                <FaFacebookSquare
+                  size={22}
+                  className="transition-colors duration-200 text-gray-400 hover:text-gray-700"
                 />
               </a>
             </li>
             <li className="mr-4">
               <a href="#">
-                <Image
-                  src="https://github.githubassets.com/images/modules/site/icons/footer/linkedin.svg"
-                  alt="Twitter"
-                  width={22}
-                  height={18}
-                  className="block"
+                <FaLinkedinIn
+                  size={22}
+                  className="transition-colors duration-200 text-gray-400 hover:text-gray-700"
                 />
               </a>
             </li>
             <li className="mr-4">
               <a href="#">
-                <Image
-                  src="https://github.githubassets.com/images/modules/site/icons/footer/youtube.svg"
-                  alt="Twitter"
-                  width={22}
-                  height={18}
-                  className="block"
+                <FaYoutube
+                  size={22}
+                  className="transition-colors duration-200 text-gray-400 hover:text-gray-700"
                 />
               </a>
             </li>
             <li className="mr-4">
               <a href="#">
-                <Image
-                  src="https://github.githubassets.com/images/modules/site/icons/footer/twitch.svg"
-                  alt="Twitter"
-                  width={22}
-                  height={18}
-                  className="block"
+                <FaTwitch
+                  size={22}
+                  className="transition-colors duration-200 text-gray-400 hover:text-gray-700"
                 />
               </a>
             </li>
             <li className="mr-4">
               <a href="#">
-                <Image
-                  src="https://github.githubassets.com/images/modules/site/icons/footer/tiktok.svg"
-                  alt="Twitter"
-                  width={22}
-                  height={18}
-                  className="block"
+                <FaTiktok
+                  size={22}
+                  className="transition-colors duration-200 text-gray-400 hover:text-gray-700"
                 />
               </a>
             </li>
             <li className="mr-4">
               <a href="#">
-                <Image
-                  src="https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg"
-                  alt="Twitter"
-                  width={22}
-                  height={18}
-                  className="block"
+                <FaGithub
+                  size={22}
+                  className="transition-colors duration-200 text-gray-400 hover:text-gray-700"
                 />
               </a>
             </li>
