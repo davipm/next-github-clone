@@ -3,9 +3,9 @@ import { FaFacebookSquare, FaLinkedinIn, FaYoutube, FaTwitch, FaTiktok, FaGithub
 
 export default function Footer() {
   return (
-    <footer className="relative pt-14 break-words">
-      <div className="max-w-[1280px] mx-auto relative z-10 overflow-hidden">
-        <div className="flex flex-col lg:flex-row py-10 mb-8 space-x-6 px-4">
+    <footer className="relative break-words pt-14">
+      <div className="relative z-10 mx-auto max-w-[1280px] overflow-hidden">
+        <div className="mb-8 flex flex-col space-x-6 px-4 py-10 lg:flex-row">
           <div className="mb-12 px-2">
             <a href="#" className="inline-block" aria-label="Go to Github">
               <svg
@@ -24,16 +24,16 @@ export default function Footer() {
 
             <div className="text-white">
               <h2 className="mt-6 text-base font-semibold">Subscribe to our newsletter</h2>
-              <p className="text-sm text-[#7d8590] mb-6">Get product updates, company news, and more.</p>
-              <a href="#" className="mb-6 px-6 py-3 text-lg font-semibold border border-gray-400 rounded-lg">
+              <p className="mb-6 text-sm text-[#7d8590]">Get product updates, company news, and more.</p>
+              <a href="#" className="mb-6 rounded-lg border border-gray-400 px-6 py-3 text-lg font-semibold">
                 Subscribe
               </a>
             </div>
           </div>
 
-          <div className="lg:flex w-full justify-between grid md:grid-cols-4 grid-cols-2 gap-6">
+          <div className="grid w-full grid-cols-2 justify-between gap-6 md:grid-cols-4 lg:flex">
             <div className="text-[#7d8590]">
-              <h2 className="font-medium mb-4 font-mono">Product</h2>
+              <h2 className="mb-4 font-mono font-medium">Product</h2>
 
               <ul className="text-sm">
                 <li className="mb-4">
@@ -89,7 +89,7 @@ export default function Footer() {
               </ul>
             </div>
             <div className="text-[#7d8590]">
-              <h2 className="font-medium mb-4 font-mono">Platform</h2>
+              <h2 className="mb-4 font-mono font-medium">Platform</h2>
 
               <ul className="text-sm">
                 <li className="mb-4">
@@ -115,7 +115,7 @@ export default function Footer() {
               </ul>
             </div>
             <div className="text-[#7d8590]">
-              <h2 className="font-medium mb-4 font-mono">Product</h2>
+              <h2 className="mb-4 font-mono font-medium">Product</h2>
 
               <ul className="text-sm">
                 <li className="mb-4">
@@ -156,7 +156,7 @@ export default function Footer() {
               </ul>
             </div>
             <div className="text-[#7d8590]">
-              <h2 className="font-medium mb-4 font-mono">Company</h2>
+              <h2 className="mb-4 font-mono font-medium">Company</h2>
 
               <ul className="text-sm">
                 <li className="mb-4">
@@ -201,48 +201,48 @@ export default function Footer() {
       </div>
 
       <div className="bg-[#161b22]">
-        <div className="max-w-[1280px] mx-auto text-[12px] md:flex flex-row-reverse py-6 justify-between items-center px-4">
+        <div className="mx-auto max-w-[1280px] flex-row-reverse items-center justify-between px-4 py-6 text-[12px] md:flex">
           <ul className="flex items-center max-md:mb-4">
             <li className="mr-4">
               <a href="#">
-                <FaXTwitter size={22} className="transition-colors duration-200 text-gray-400 hover:text-gray-700" />
+                <FaXTwitter size={22} className="text-gray-400 transition-colors duration-200 hover:text-gray-700" />
               </a>
             </li>
             <li className="mr-4">
               <a href="#">
                 <FaFacebookSquare
                   size={22}
-                  className="transition-colors duration-200 text-gray-400 hover:text-gray-700"
+                  className="text-gray-400 transition-colors duration-200 hover:text-gray-700"
                 />
               </a>
             </li>
             <li className="mr-4">
               <a href="#">
-                <FaLinkedinIn size={22} className="transition-colors duration-200 text-gray-400 hover:text-gray-700" />
+                <FaLinkedinIn size={22} className="text-gray-400 transition-colors duration-200 hover:text-gray-700" />
               </a>
             </li>
             <li className="mr-4">
               <a href="#">
-                <FaYoutube size={22} className="transition-colors duration-200 text-gray-400 hover:text-gray-700" />
+                <FaYoutube size={22} className="text-gray-400 transition-colors duration-200 hover:text-gray-700" />
               </a>
             </li>
             <li className="mr-4">
               <a href="#">
-                <FaTwitch size={22} className="transition-colors duration-200 text-gray-400 hover:text-gray-700" />
+                <FaTwitch size={22} className="text-gray-400 transition-colors duration-200 hover:text-gray-700" />
               </a>
             </li>
             <li className="mr-4">
               <a href="#">
-                <FaTiktok size={22} className="transition-colors duration-200 text-gray-400 hover:text-gray-700" />
+                <FaTiktok size={22} className="text-gray-400 transition-colors duration-200 hover:text-gray-700" />
               </a>
             </li>
             <li className="mr-4">
               <a href="#">
-                <FaGithub size={22} className="transition-colors duration-200 text-gray-400 hover:text-gray-700" />
+                <FaGithub size={22} className="text-gray-400 transition-colors duration-200 hover:text-gray-700" />
               </a>
             </li>
           </ul>
-          <ul className="flex items-center mb-4 sm:mb-0 text-[#7d8590] flex-wrap">
+          <ul className="mb-4 flex flex-wrap items-center text-[#7d8590] sm:mb-0">
             <li className="mr-3">© {new Date().getFullYear()} GitHub, Inc.</li>
             <li className="mr-3">
               <a href="#" className="inline-block hover:underline">

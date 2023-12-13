@@ -13,7 +13,7 @@ export default function Home() {
           <img
             src="/hero-bg.webp"
             alt="Bg image"
-            className="absolute top-0 transition ease-in duration-200 max-xl:right-[-1050px] xl:right-[-970px] -z-30 image"
+            className="image absolute top-0 -z-30 transition duration-200 ease-in max-xl:right-[-1050px] xl:right-[-970px]"
           />
         </div>
 
@@ -21,7 +21,7 @@ export default function Home() {
           <Hero />
         </div>
 
-        <div id="productivity" className="px-4 pt-8 overflow-hidden">
+        <div id="productivity" className="overflow-hidden px-4 pt-8">
           <Productivity />
         </div>
       </div>

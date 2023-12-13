@@ -22,7 +22,7 @@ export default function Navbar() {
                 Sing Up
               </a>
             </div>
-            <a href="https://github.com">
+            <a href="https://github.com" target="_blank">
               <FaGithub size={32} className="text-white" />
             </a>
             <button

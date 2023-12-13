@@ -9,31 +9,31 @@ import Image from "next/image";
 
 export default function CodeEditor() {
   return (
-    <div className="rounded-xl border border-[#30363d] overflow-hidden relative shadow-2xl bg-[#161b22]">
+    <div className="relative overflow-hidden rounded-xl border border-[#30363d] bg-[#161b22] shadow-2xl">
       <div className="flex items-center justify-between border-b border-[#30363d] p-4">
-        <div className="max-md:hidden flex text-[#7d8590] font-medium">
+        <div className="flex font-medium text-[#7d8590] max-md:hidden">
           <GoCode size={30} />
         </div>
-        <div className="flex items-center justify-between px-2 py-1 rounded-md bg-[#0d1117] border-[0.5px] border-[#30363d] w-full md:w-auto">
+        <div className="flex w-full items-center justify-between rounded-md border-[0.5px] border-[#30363d] bg-[#0d1117] px-2 py-1 md:w-auto">
           <FiLock size={16} className="text-[#7d8590]" />
-          <div className="md:px-8 px-2 text-white whitespace-nowrap overflow-hidden text-[14px] text-ellipsis">
+          <div className="overflow-hidden text-ellipsis whitespace-nowrap px-2 text-[14px] text-white md:px-8">
             https://github.com/davipm
           </div>
           <TfiReload size={16} className="text-[#7d8590]" />
         </div>
-        <div className="max-md:hidden flex text-[#7d8590] font-medium">
+        <div className="flex font-medium text-[#7d8590] max-md:hidden">
           <GoPlus size={30} />
         </div>
       </div>
 
       <div className="flex items-stretch">
-        <div className="hidden md:block p-6 border-r border-[#30363d]">
+        <div className="hidden border-r border-[#30363d] p-6 md:block">
           <FiMenu size={30} className="text-[#7d8590]" />
         </div>
-        <div className="min-w-0 w-full">
+        <div className="w-full min-w-0">
           <div className="border-b border-[#30363d] text-[#7d8590]">
             <ul className="flex px-3 pt-4">
-              <li className="px-3 py-2 rounded-t-md bg-[#0d1117] text-gray-300">index.html</li>
+              <li className="rounded-t-md bg-[#0d1117] px-3 py-2 text-gray-300">index.html</li>
               <li className="px-3 py-2">script.js</li>
               <li className="px-3 py-2">package.json</li>
             </ul>
@@ -52,7 +52,7 @@ export default function CodeEditor() {
             </div>
           </div>
           <div className="p-4 text-[#7d8590]">
-            <ul className="flex mb-3">
+            <ul className="mb-3 flex">
               <li className="pr-3 text-gray-200">Terminal</li>
               <li className="pr-3">Output</li>
               <li className="pr-3">Problems</li>
@@ -62,13 +62,13 @@ export default function CodeEditor() {
             <ConsoleAnimated />
           </div>
         </div>
-        <div className="md:block hidden border-l border-[#30363d] w-full">
-          <div className="flex items-center justify-between px-[16px] pt-[22px] pb-2 text-gray-100">
+        <div className="hidden w-full border-l border-[#30363d] md:block">
+          <div className="flex items-center justify-between px-[16px] pb-2 pt-[22px] text-gray-100">
             <FiMenu size={25} />
             <FaGithub size={25} />
             <FaRegBell sieze={25} />
           </div>
-          <div className="px-6 flex items-center justify-between h-full bg-[#040d21]">
+          <div className="flex h-full items-center justify-between bg-[#040d21] px-6">
             <Image
               src="/globe.jpg"
               alt="Planet earth with visualization of GitHub activity crossing the globe"
