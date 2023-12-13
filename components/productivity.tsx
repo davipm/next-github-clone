@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 
+import CodeEditor from "@/components/code-editor";
+
 export default function Productivity() {
   return (
     <div className="max-w-[1280px] mx-auto">
@@ -55,16 +57,12 @@ export default function Productivity() {
             viewport={{ once: true }}
             className="text-[28px] md:text-[40px] delay-300 max-md:leading-8 max-lg:leading-10 lg:text-5xl mb-7 font-medium text-white js-build-in-item build-in-slideX-left build-in-animate"
           >
-            <span className="text-[#7ee787]">
-              Accelerate high-quality software development.
-            </span>
-            Our AI-powered platform drives innovation with tools that boost
-            developer velocity.
+            <span className="text-[#7ee787]">Accelerate high-quality software development.</span>
+            Our AI-powered platform drives innovation with tools that boost developer velocity.
           </motion.h3>
         </div>
       </div>
-
-      {/* TODO: Add Editor component */}
+      <CodeEditor />
     </div>
   );
 }
