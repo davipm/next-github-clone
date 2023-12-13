@@ -16,11 +16,7 @@ export default function Discount() {
         height="2712"
       />
       <div className="flex items-center flex-row relative">
-        <motion.div
-          initial={{ height: 0 }}
-          whileInView={{ height: "100%" }}
-          className="w-[3px] h-full increase1"
-        ></motion.div>
+        <motion.div initial={{ height: 0 }} whileInView={{ height: "100%" }} className="w-[3px] h-full increase1" />
         <img
           src="https://github.githubassets.com/images/modules/site/home-campaign/git-branch-collaboration.svg"
           alt=""

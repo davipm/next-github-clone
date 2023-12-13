@@ -116,58 +116,27 @@ export default function Hero() {
 
             <div className="flex flex-wrap justify-center xl:justify-between items-center py-4 gap-5">
               <div className="relative w-[150px] h-[44px]">
-                <Image
-                  src="https://github.githubassets.com/images/modules/site/home-campaign/logos/stripe.svg"
-                  alt="Stripe logo"
-                  title="Stripe logo"
-                  fill
-                  className="object-contain"
-                />
+                <Image src="/logos/stripe.svg" alt="Stripe logo" title="Stripe logo" fill className="object-contain" />
               </div>
 
               <div className="relative w-[150px] h-[44px]">
-                <Image
-                  src="https://github.githubassets.com/images/modules/site/home-campaign/logos/pinterest.svg"
-                  alt="Pinterest logo"
-                  fill
-                  className="object-contain"
-                />
+                <Image src="/logos/pinterest.svg" alt="Pinterest logo" fill className="object-contain" />
               </div>
 
               <div className="relative w-[150px] h-[44px]">
-                <Image
-                  src="https://github.githubassets.com/images/modules/site/home-campaign/logos/kpmg.svg"
-                  alt="KPMG logo"
-                  fill
-                  className="object-contain"
-                />
+                <Image src="/logos/kpmg.svg" alt="KPMG logo" fill className="object-contain" />
               </div>
 
               <div className="relative w-[150px] h-[44px]">
-                <Image
-                  src="https://github.githubassets.com/images/modules/site/home-campaign/logos/mercedes.svg"
-                  alt="Mercedes-Benz logo"
-                  fill
-                  className="object-contain"
-                />
+                <Image src="/logos/mercedes.svg" alt="Mercedes-Benz logo" fill className="object-contain" />
               </div>
 
               <div className="relative w-[150px] h-[44px]">
-                <Image
-                  src="https://github.githubassets.com/images/modules/site/home-campaign/logos/pg.svg"
-                  alt="P&amp;G logo"
-                  fill
-                  className="object-contain"
-                />
+                <Image src="/logos/pg.svg" alt="P&amp;G logo" fill className="object-contain" />
               </div>
 
               <div className="relative w-[150px] h-[44px]">
-                <Image
-                  src="https://github.githubassets.com/images/modules/site/home-campaign/logos/telus.svg"
-                  alt="Telus logo"
-                  fill
-                  className="object-contain"
-                />
+                <Image src="/logos/telus.svg" alt="Telus logo" fill className="object-contain" />
               </div>
             </div>
           </div>
