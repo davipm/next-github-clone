@@ -18,14 +18,11 @@ export default function Navbar() {
         <div className="flex items-center max-lg:justify-between max-lg:flex-row-reverse">
           <div className="flex justify-between items-center max-lg:w-full">
             <div className="lg:hidden">
-              <a
-                href="#"
-                className="px-2 py-[6px] border rounded-md hover:text-neutral-400"
-              >
+              <a href="#" className="px-2 py-[6px] border rounded-md hover:text-neutral-400">
                 Sing Up
               </a>
             </div>
-            <a className="#" href="https://github.com">
+            <a href="https://github.com">
               <FaGithub size={32} className="text-white" />
             </a>
             <button
@@ -35,21 +32,19 @@ export default function Navbar() {
             >
               <div
                 className={`w-[23px] h-[2px] transition ease-in duration-150  bg-white ${
-                  showNav
-                    ? "rotate-45 mb-0  translate-y-[1px]"
-                    : "rotate-0 mb-1"
+                  showNav ? "rotate-45 mb-0  translate-y-[1px]" : "rotate-0 mb-1"
                 } `}
-              ></div>
+              />
               <div
                 className={`w-[23px] h-[2px] transition ease-in duration-150 bg-white ${
                   showNav ? "hidden mb-0" : "mb-1"
                 } `}
-              ></div>
+              />
               <div
                 className={`w-[23px] h-[2px] transition ease-in duration-150 bg-white  ${
                   showNav ? "-rotate-45 mb-0" : "rotate-0"
                 }`}
-              ></div>
+              />
             </button>
           </div>
           <div
@@ -92,10 +87,7 @@ export default function Navbar() {
                       opacity=".4"
                       d="M3.5.5h12c1.7 0 3 1.3 3 3v13c0 1.7-1.3 3-3 3h-12c-1.7 0-3-1.3-3-3v-13c0-1.7 1.3-3 3-3z"
                     ></path>
-                    <path
-                      fill="#979A9C"
-                      d="M11.8 6L8 15.1h-.9L10.8 6h1z"
-                    ></path>
+                    <path fill="#979A9C" d="M11.8 6L8 15.1h-.9L10.8 6h1z"></path>
                   </svg>
                 </div>
                 <div className="max-lg:flex justify-center max-lg:border-[1px] max-lg:mr-4 rounded-md max-lg:bg-neutral-800">
