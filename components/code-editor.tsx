@@ -1,6 +1,4 @@
-"use client";
-
-import { GoCode, GoPlus, GoBell } from "react-icons/go";
+import { GoCode, GoPlus } from "react-icons/go";
 import { FiMenu, FiLock } from "react-icons/fi";
 import { TfiReload } from "react-icons/tfi";
 import { FaGithub, FaRegBell } from "react-icons/fa";
