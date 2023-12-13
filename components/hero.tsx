@@ -5,6 +5,7 @@ import Image from "next/image";
 import { IoCode } from "react-icons/io5";
 
 import { AnimatedArrow } from "@/components/animated-arrow";
+import { logos } from "@/public/logos";
 
 export default function Hero() {
   return (
@@ -115,29 +116,11 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-5 py-4 xl:justify-between">
-              <div className="relative h-[44px] w-[150px]">
-                <Image src="/logos/stripe.svg" alt="Stripe logo" title="Stripe logo" fill className="object-contain" />
-              </div>
-
-              <div className="relative h-[44px] w-[150px]">
-                <Image src="/logos/pinterest.svg" alt="Pinterest logo" fill className="object-contain" />
-              </div>
-
-              <div className="relative h-[44px] w-[150px]">
-                <Image src="/logos/kpmg.svg" alt="KPMG logo" fill className="object-contain" />
-              </div>
-
-              <div className="relative h-[44px] w-[150px]">
-                <Image src="/logos/mercedes.svg" alt="Mercedes-Benz logo" fill className="object-contain" />
-              </div>
-
-              <div className="relative h-[44px] w-[150px]">
-                <Image src="/logos/pg.svg" alt="P&amp;G logo" fill className="object-contain" />
-              </div>
-
-              <div className="relative h-[44px] w-[150px]">
-                <Image src="/logos/telus.svg" alt="Telus logo" fill className="object-contain" />
-              </div>
+              {logos.map((logo) => (
+                <div className="relative h-[44px] w-[150px]">
+                  <Image src={logo.src} alt={logo.title} title={logo.title} fill className="object-contain" />
+                </div>
+              ))}
             </div>
           </div>
         </div>
