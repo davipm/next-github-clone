@@ -1,16 +1,12 @@
-import Navbar from "@/components/navbar";
 import Hero from "@/components/hero";
 import Footer from "@/components/footer";
 import Productivity from "@/components/productivity";
+import Header from "@/components/header";
 
 export default function Home() {
   return (
     <main>
-      <div className="relative z-50">
-        <div className="absolute w-full">
-          <Navbar />
-        </div>
-      </div>
+      <Header />
 
       <div className="overflow-hidden">
         <div className="relative">

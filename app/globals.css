@@ -59,12 +59,7 @@ body {
 }
 
 .home-campaign-signup-button {
-  background: linear-gradient(
-      180deg,
-      rgba(183, 52, 179, 0.15) 0%,
-      rgba(164, 46, 156, 0) 100%
-    ),
-    #6e40c9 !important;
+  background: linear-gradient(180deg, rgba(183, 52, 179, 0.15) 0%, rgba(164, 46, 156, 0) 100%), #6e40c9 !important;
 }
 
 .home-campaign-glowing-icon-glow-1 {
@@ -186,19 +181,3 @@ body {
   width: 100% !important;
   height: auto !important;
 }
-
-/*.hero-drone {*/
-/*  animation: animate 20s linear infinite;*/
-/*}*/
-
-/*@keyframes animate {*/
-/*  0% {*/
-/*    transform: translateY(-20px);*/
-/*  }*/
-/*  50% {*/
-/*    transform: translateY(0);*/
-/*  }*/
-/*  100% {*/
-/*    transform: translateY(-20px);*/
-/*  }*/
-/*}*/
