@@ -117,8 +117,8 @@ export default function Hero() {
 
             <div className="flex flex-wrap items-center justify-center gap-5 py-4 xl:justify-between">
               {logos.map(({ src, title }) => (
-                <div className="relative h-[44px] w-[150px]">
-                  <Image src={src} alt={title} title={title} key={title} fill className="object-contain" />
+                <div className="relative h-[44px] w-[150px]" key={title}>
+                  <Image src={src} alt={title} title={title} fill className="object-contain" />
                 </div>
               ))}
             </div>
