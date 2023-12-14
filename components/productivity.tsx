@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 
 import CodeEditor from "@/components/code-editor";
+import CodeSpace from "@/components/code-space";
 
 export default function Productivity() {
   return (
@@ -62,7 +63,9 @@ export default function Productivity() {
           </motion.h3>
         </div>
       </div>
+
       <CodeEditor />
+      <CodeSpace />
     </div>
   );
 }

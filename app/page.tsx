@@ -8,22 +8,14 @@ export default function Home() {
     <main>
       <Header />
 
-      <div className="overflow-hidden">
-        <div className="relative">
-          <img
-            src="/hero-bg.webp"
-            alt="Bg image"
-            className="image absolute top-0 -z-30 transition duration-200 ease-in max-xl:right-[-1050px] xl:right-[-970px]"
-          />
-        </div>
-
-        <div className="px-3">
+      <div className="overflow-hidden bg-hero-patter bg-cover bg-no-repeat" style={{ backgroundPosition: "63%" }}>
+        <section className="px-3">
           <Hero />
-        </div>
+        </section>
 
-        <div id="productivity" className="overflow-hidden px-4 pt-8">
+        <section id="productivity" className="overflow-hidden px-4 pt-8">
           <Productivity />
-        </div>
+        </section>
       </div>
 
       <Footer />
