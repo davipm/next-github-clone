@@ -207,12 +207,12 @@ export default function Footer() {
         <div className="mx-auto max-w-[1280px] flex-row-reverse items-center justify-between px-4 py-6 text-[12px] md:flex">
           <ul className="flex items-center max-md:mb-4">
             <li className="mr-4">
-              <a href="#">
+              <a href="#" aria-label="X">
                 <FaXTwitter size={22} className="text-gray-400 transition-colors duration-100 hover:text-gray-500" />
               </a>
             </li>
             <li className="mr-4">
-              <a href="#">
+              <a href="#" aria-label="Facebook">
                 <FaFacebookSquare
                   size={22}
                   className="text-gray-400 transition-colors duration-100 hover:text-gray-500"
@@ -220,27 +220,27 @@ export default function Footer() {
               </a>
             </li>
             <li className="mr-4">
-              <a href="#">
+              <a href="#" aria-label="Linkedin">
                 <FaLinkedinIn size={22} className="text-gray-400 transition-colors duration-100 hover:text-gray-500" />
               </a>
             </li>
             <li className="mr-4">
-              <a href="#">
+              <a href="#" aria-label="Youtube">
                 <FaYoutube size={22} className="text-gray-400 transition-colors duration-100 hover:text-gray-500" />
               </a>
             </li>
             <li className="mr-4">
-              <a href="#">
+              <a href="#" aria-label="Twitch">
                 <FaTwitch size={22} className="text-gray-400 transition-colors duration-100 hover:text-gray-500" />
               </a>
             </li>
             <li className="mr-4">
-              <a href="#">
+              <a href="#" aria-label="TikTok">
                 <FaTiktok size={22} className="text-gray-400 transition-colors duration-100 hover:text-gray-500" />
               </a>
             </li>
             <li className="mr-4">
-              <a href="#">
+              <a href="#" aria-label="GitHub">
                 <FaGithub size={22} className="text-gray-400 transition-colors duration-100 hover:text-gray-500" />
               </a>
             </li>

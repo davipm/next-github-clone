@@ -1,8 +1,10 @@
 "use client";
 
+import Link from "next/link";
 import { useRef } from "react";
-import NavListSecondary from "@/components/navbar/nav-utils/nav-list-secondary";
+
 import { useShow } from "@/hooks";
+import NavListSecondary from "@/components/navbar/nav-utils/nav-list-secondary";
 
 export default function SolutionNav() {
   const ref = useRef(null);
@@ -12,7 +14,7 @@ export default function SolutionNav() {
     <li ref={ref}>
       <button
         type="button"
-        className={`flex items-center p-1 max-lg:font-semibold transition ease-in duration-150 max-lg:justify-between max-lg:w-full ${
+        className={`flex items-center p-1 transition duration-150 ease-in max-lg:w-full max-lg:justify-between max-lg:font-semibold ${
           isOpen ? "lg:text-neutral-300" : ""
         }`}
       >
@@ -26,8 +28,8 @@ export default function SolutionNav() {
           version="1.1"
           width="16"
           data-view-component="true"
-          className={`ml-1 transition-all ease-in duration-200 max-lg:scale-x-125 ${
-            isOpen ? "lg:mt-2 opacity-40 max-lg:0" : "mt-0 max-lg:-rotate-90"
+          className={`ml-1 transition-all duration-200 ease-in max-lg:scale-x-125 ${
+            isOpen ? "max-lg:0 opacity-40 lg:mt-2" : "mt-0 max-lg:-rotate-90"
           }`}
         >
           <path d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"></path>
@@ -35,27 +37,27 @@ export default function SolutionNav() {
       </button>
 
       <div
-        className={`relative lg:absolute -ml-5 bg-white rounded-md lg:py-4 p-6 w-[300px] transition ease-in duration-300 ${
-          isOpen ? "opacity-100 " : "opacity-0 hidden top-[2000px]"
+        className={`relative -ml-5 w-[300px] rounded-md bg-white p-6 transition duration-300 ease-in lg:absolute lg:py-4 ${
+          isOpen ? "opacity-100 " : "top-[2000px] hidden opacity-0"
         }`}
       >
-        <div className="lg:border-b mb-4 pb-4 pt-4 w-full">
-          <span className="text-neutral-800 font-semibold text-base">For</span>
-          <ul className="text-sm text-neutral-500 mt-1 w-full">
+        <div className="mb-4 w-full pb-4 pt-4 lg:border-b">
+          <span className="text-base font-semibold text-neutral-800">For</span>
+          <ul className="mt-1 w-full text-sm text-neutral-500">
             <li>
-              <a href="#" className="block py-2 hover:text-blue-600">
+              <Link href="/" className="block py-2 hover:text-blue-600">
                 Enterprise
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="block py-2 hover:text-blue-600">
+              <Link href="/" className="block py-2 hover:text-blue-600">
                 Teams
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="block py-2 hover:text-blue-600">
+              <Link href="/" className="block py-2 hover:text-blue-600">
                 Startups
-              </a>
+              </Link>
             </li>
             <li className="py-2">
               <NavListSecondary
@@ -65,15 +67,13 @@ export default function SolutionNav() {
             </li>
           </ul>
         </div>
-        <div className="lg:border-b mb-4 pb-4 pt-2 w-full">
-          <span className="text-neutral-800 font-semibold text-base">
-            By Solution
-          </span>
-          <ul className="text-sm text-neutral-500 mt-1 w-full">
+        <div className="mb-4 w-full pb-4 pt-2 lg:border-b">
+          <span className="text-base font-semibold text-neutral-800">By Solution</span>
+          <ul className="mt-1 w-full text-sm text-neutral-500">
             <li>
-              <a href="" className="block py-2 hover:text-blue-600">
+              <Link href="/" className="block py-2 hover:text-blue-600">
                 CI/CD & Automation
-              </a>
+              </Link>
             </li>
             <li className="py-2">
               <NavListSecondary
@@ -89,15 +89,13 @@ export default function SolutionNav() {
             </li>
           </ul>
         </div>
-        <div className="mb-4 pb-0 pt-2 w-full">
-          <span className="text-neutral-800 font-semibold text-base">
-            Case Studies
-          </span>
-          <ul className="text-sm text-neutral-500 mt-1 w-full">
+        <div className="mb-4 w-full pb-0 pt-2">
+          <span className="text-base font-semibold text-neutral-800">Case Studies</span>
+          <ul className="mt-1 w-full text-sm text-neutral-500">
             <li>
-              <a href="" className="block py-2 hover:text-blue-600">
+              <Link href="/" className="block py-2 hover:text-blue-600">
                 Customer stories
-              </a>
+              </Link>
             </li>
             <li className="py-2">
               <NavListSecondary

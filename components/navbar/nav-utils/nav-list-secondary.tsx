@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 type Props = {
   main: string;
   path: string;
@@ -5,9 +7,9 @@ type Props = {
 
 export default function NavListSecondary({ main, path }: Props) {
   return (
-    <a
-      href="#"
-      className="group flex items-center text-neutral-500 hover:text-blue-600 transition ease-in duration-150"
+    <Link
+      href="/"
+      className="group flex items-center text-neutral-500 transition duration-150 ease-in hover:text-blue-600"
     >
       {main}
       <svg
@@ -18,10 +20,10 @@ export default function NavListSecondary({ main, path }: Props) {
         version="1.1"
         width="16"
         data-view-component="true"
-        className="octicon octicon-link-external HeaderMenu-external-icon color-fg-subtle ml-2 transition ease-in duration-150 -translate-x-3 opacity-0 group-hover:translate-x-0 group-hover:text-blue-600 group-hover:opacity-100"
+        className="octicon octicon-link-external HeaderMenu-external-icon color-fg-subtle ml-2 -translate-x-3 opacity-0 transition duration-150 ease-in group-hover:translate-x-0 group-hover:text-blue-600 group-hover:opacity-100"
       >
         <path d={path}></path>
       </svg>
-    </a>
+    </Link>
   );
 }

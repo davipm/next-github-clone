@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -42,7 +43,7 @@ export default function CodeSpace() {
                 <span className="font-semibold text-white">GitHub Codespaces</span> offers a complete dev environment in
                 seconds, so you can code, build, test, and open pull requests from any repo anywhere.
               </h2>
-              <a href="#" className="group inline-block py-1 text-xl font-semibold text-white">
+              <Link href="/" className="group inline-block py-1 text-xl font-semibold text-white">
                 Check out GitHub Codespaces
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +66,7 @@ export default function CodeSpace() {
                   />
                 </svg>
                 <div className="h-[2.5px] w-0 origin-left scale-0 rounded-full bg-white transition duration-300 ease-in group-hover:w-11/12 group-hover:scale-100" />
-              </a>
+              </Link>
             </motion.div>
           </div>
           <div className="w-full px-6 py-4">

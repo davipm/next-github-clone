@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRef } from "react";
 import { SiGithubactions } from "react-icons/si";
 import { GoPackage, GoShieldCheck, GoCopilot, GoCodeReview } from "react-icons/go";
@@ -19,7 +20,7 @@ export default function ProductNav() {
     <li ref={ref}>
       <button
         type="button"
-        className={`flex items-center p-1 max-lg:font-semibold transition ease-in duration-150 max-lg:justify-between max-lg:w-full ${
+        className={`flex items-center p-1 transition duration-150 ease-in max-lg:w-full max-lg:justify-between max-lg:font-semibold ${
           isOpen ? "lg:text-neutral-300" : ""
         }`}
       >
@@ -33,8 +34,8 @@ export default function ProductNav() {
           version="1.1"
           width="16"
           data-view-component="true"
-          className={`ml-1 transition-all ease-in duration-200 max-lg:scale-x-125 ${
-            isOpen ? "lg:mt-2 opacity-40 max-lg:0" : "mt-0 max-lg:-rotate-90"
+          className={`ml-1 transition-all duration-200 ease-in max-lg:scale-x-125 ${
+            isOpen ? "max-lg:0 opacity-40 lg:mt-2" : "mt-0 max-lg:-rotate-90"
           }`}
         >
           <path d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"></path>
@@ -42,11 +43,11 @@ export default function ProductNav() {
       </button>
 
       <div
-        className={`relative lg:absolute lg:flex -ml-5 bg-white rounded-md lg:py-4 py-2 transition ease-in duration-150 ${
-          isOpen ? "opacity-100" : "opacity-0 invisible max-lg:hidden"
+        className={`relative -ml-5 rounded-md bg-white py-2 transition duration-150 ease-in lg:absolute lg:flex lg:py-4 ${
+          isOpen ? "opacity-100" : "invisible opacity-0 max-lg:hidden"
         }`}
       >
-        <div className="lg:px-4 lg:border-r-[1px] mb-4 lg:mb-0 lg:pr-10">
+        <div className="mb-4 lg:mb-0 lg:border-r-[1px] lg:px-4 lg:pr-10">
           <ul className="max-lg:pl-6">
             <li>
               <NavList main="Action" submain="Automate any workflow" icon={<SiGithubactions size={25} />} />
@@ -75,11 +76,11 @@ export default function ProductNav() {
           </ul>
         </div>
 
-        <div className="lg:px-8 lg:pr-20 py-2 max-lg:pl-6">
-          <span className="my-1 text-neutral-800 font-semibold">Explore</span>
+        <div className="py-2 max-lg:pl-6 lg:px-8 lg:pr-20">
+          <span className="my-1 font-semibold text-neutral-800">Explore</span>
           <ul className="text-sm">
-            <li className="text-neutral-500 hover:text-blue-500 py-2">
-              <a href="#">All Features</a>
+            <li className="py-2 text-neutral-500 hover:text-blue-500">
+              <Link href="#">All Features</Link>
             </li>
             <li className="py-2">
               <NavListSecondary

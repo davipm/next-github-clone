@@ -76,19 +76,15 @@ export default function Hero() {
           <div className="flex max-md:flex-col md:space-x-5 lg:w-11/12">
             <form>
               <div className="grid max-md:grid-rows-2 md:grid-cols-2">
-                <dl>
-                  <dd>
-                    <input
-                      type="email"
-                      name="user_email"
-                      id="user_email"
-                      autoComplete="off"
-                      spellCheck="false"
-                      className="right-0 h-12 w-full pl-3 placeholder:text-[16px] focus:outline-none max-md:rounded-md md:rounded-s-md"
-                      placeholder="Email address"
-                    />
-                  </dd>
-                </dl>
+                <input
+                  type="email"
+                  name="user_email"
+                  id="user_email"
+                  autoComplete="off"
+                  spellCheck="false"
+                  className="right-0 h-12 w-full pl-3 placeholder:text-[16px] focus:outline-none max-md:rounded-md md:rounded-s-md"
+                  placeholder="Email address"
+                />
 
                 <button
                   type="button"

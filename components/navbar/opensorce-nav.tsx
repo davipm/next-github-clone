@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRef } from "react";
 import { useShow } from "@/hooks";
 
@@ -52,19 +53,19 @@ export default function OpensorceNav() {
           <span className="text-base font-semibold text-neutral-800">Repositories</span>
           <ul className="mt-1 w-full text-sm text-neutral-500">
             <li>
-              <a href="#" className="block py-2 hover:text-blue-600">
+              <Link href="#" className="block py-2 hover:text-blue-600">
                 Topics
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="block py-2 hover:text-blue-600">
+              <Link href="#" className="block py-2 hover:text-blue-600">
                 Trendings
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="block py-2 hover:text-blue-600">
+              <Link href="#" className="block py-2 hover:text-blue-600">
                 Collections
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
