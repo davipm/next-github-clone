@@ -25,7 +25,10 @@ export default function Footer() {
             <div className="text-white">
               <h2 className="mt-6 text-base font-semibold">Subscribe to our newsletter</h2>
               <p className="mb-6 text-sm text-[#7d8590]">Get product updates, company news, and more.</p>
-              <a href="#" className="mb-6 rounded-lg border border-gray-400 px-6 py-3 text-lg font-semibold">
+              <a
+                href="#"
+                className="mb-6 rounded-lg border border-gray-400 px-6 py-3 text-lg font-semibold transition duration-200 hover:opacity-80"
+              >
                 Subscribe
               </a>
             </div>
@@ -205,40 +208,40 @@ export default function Footer() {
           <ul className="flex items-center max-md:mb-4">
             <li className="mr-4">
               <a href="#">
-                <FaXTwitter size={22} className="text-gray-400 transition-colors duration-200 hover:text-gray-700" />
+                <FaXTwitter size={22} className="text-gray-400 transition-colors duration-100 hover:text-gray-500" />
               </a>
             </li>
             <li className="mr-4">
               <a href="#">
                 <FaFacebookSquare
                   size={22}
-                  className="text-gray-400 transition-colors duration-200 hover:text-gray-700"
+                  className="text-gray-400 transition-colors duration-100 hover:text-gray-500"
                 />
               </a>
             </li>
             <li className="mr-4">
               <a href="#">
-                <FaLinkedinIn size={22} className="text-gray-400 transition-colors duration-200 hover:text-gray-700" />
+                <FaLinkedinIn size={22} className="text-gray-400 transition-colors duration-100 hover:text-gray-500" />
               </a>
             </li>
             <li className="mr-4">
               <a href="#">
-                <FaYoutube size={22} className="text-gray-400 transition-colors duration-200 hover:text-gray-700" />
+                <FaYoutube size={22} className="text-gray-400 transition-colors duration-100 hover:text-gray-500" />
               </a>
             </li>
             <li className="mr-4">
               <a href="#">
-                <FaTwitch size={22} className="text-gray-400 transition-colors duration-200 hover:text-gray-700" />
+                <FaTwitch size={22} className="text-gray-400 transition-colors duration-100 hover:text-gray-500" />
               </a>
             </li>
             <li className="mr-4">
               <a href="#">
-                <FaTiktok size={22} className="text-gray-400 transition-colors duration-200 hover:text-gray-700" />
+                <FaTiktok size={22} className="text-gray-400 transition-colors duration-100 hover:text-gray-500" />
               </a>
             </li>
             <li className="mr-4">
               <a href="#">
-                <FaGithub size={22} className="text-gray-400 transition-colors duration-200 hover:text-gray-700" />
+                <FaGithub size={22} className="text-gray-400 transition-colors duration-100 hover:text-gray-500" />
               </a>
             </li>
           </ul>
