@@ -207,12 +207,12 @@ export default function Footer() {
         <div className="mx-auto max-w-[1280px] flex-row-reverse items-center justify-between px-4 py-6 text-[12px] md:flex">
           <ul className="flex items-center max-md:mb-4">
             <li className="mr-4">
-              <a href="#" aria-label="X">
+              <a href="#" aria-label="X" target="_blank">
                 <FaXTwitter size={22} className="text-gray-400 transition-colors duration-100 hover:text-gray-500" />
               </a>
             </li>
             <li className="mr-4">
-              <a href="#" aria-label="Facebook">
+              <a href="#" aria-label="Facebook" target="_blank">
                 <FaFacebookSquare
                   size={22}
                   className="text-gray-400 transition-colors duration-100 hover:text-gray-500"
@@ -220,27 +220,27 @@ export default function Footer() {
               </a>
             </li>
             <li className="mr-4">
-              <a href="#" aria-label="Linkedin">
+              <a href="#" aria-label="Linkedin" target="_blank">
                 <FaLinkedinIn size={22} className="text-gray-400 transition-colors duration-100 hover:text-gray-500" />
               </a>
             </li>
             <li className="mr-4">
-              <a href="#" aria-label="Youtube">
+              <a href="#" aria-label="Youtube" target="_blank">
                 <FaYoutube size={22} className="text-gray-400 transition-colors duration-100 hover:text-gray-500" />
               </a>
             </li>
             <li className="mr-4">
-              <a href="#" aria-label="Twitch">
+              <a href="#" aria-label="Twitch" target="_blank">
                 <FaTwitch size={22} className="text-gray-400 transition-colors duration-100 hover:text-gray-500" />
               </a>
             </li>
             <li className="mr-4">
-              <a href="#" aria-label="TikTok">
+              <a href="#" aria-label="TikTok" target="_blank">
                 <FaTiktok size={22} className="text-gray-400 transition-colors duration-100 hover:text-gray-500" />
               </a>
             </li>
             <li className="mr-4">
-              <a href="#" aria-label="GitHub">
+              <a href="#" aria-label="GitHub" target="_blank">
                 <FaGithub size={22} className="text-gray-400 transition-colors duration-100 hover:text-gray-500" />
               </a>
             </li>
@@ -253,17 +253,17 @@ export default function Footer() {
               </a>
             </li>
             <li className="mr-3">
-              <a href="#" className="inline-block hover:underline">
+              <a href="#" className="inline-block hover:underline" target="_blank">
                 Privacy (Updated 08/2022)
               </a>
             </li>
             <li className="mr-3">
-              <a href="#" className="inline-block hover:underline">
+              <a href="#" className="inline-block hover:underline" target="_blank">
                 Sitemap
               </a>
             </li>
             <li className="mr-3">
-              <a href="#" className="inline-block hover:underline">
+              <a href="#" className="inline-block hover:underline" target="_blank">
                 What is Git?
               </a>
             </li>
