@@ -17,7 +17,7 @@ export default function CodeSpace() {
           whileInView="show"
           viewport={{ once: false }}
           transition={{ duration: 0.3 }}
-          className="increase h-full w-[3px] origin-top"
+          className="bg-increase h-full w-[3px] origin-top"
         />
 
         <Image
