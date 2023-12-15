@@ -15,9 +15,9 @@ export default function CodeSpace() {
           variants={lineVariant}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           transition={{ duration: 0.3 }}
-          className="bg-increase h-full w-[3px] origin-top"
+          className="h-full w-[3px] origin-top bg-increase"
         />
 
         <Image
@@ -37,6 +37,7 @@ export default function CodeSpace() {
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2, type: "tween" }}
+              viewport={{ once: true }}
               className="md:pr-6"
             >
               <h2 className="mb-4 w-full text-2xl text-[#7d8590] max-lg:text-[20px] max-md:w-10/12 lg:w-full">
@@ -75,6 +76,7 @@ export default function CodeSpace() {
                 <motion.div
                   initial={{ opacity: 0, x: -30 }}
                   whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
                   transition={{ type: "tween" }}
                   className="right-7 top-[-200px] z-[1] shadow-2xl sm:absolute"
                 >
@@ -97,6 +99,7 @@ export default function CodeSpace() {
                   initial={{ opacity: 0, x: 30 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ type: "tween", delay: 0.1 }}
+                  viewport={{ once: true }}
                   className="build-in-animate relative bottom-0 hidden max-w-[373px] overflow-hidden rounded-md sm:block"
                 >
                   <Image
@@ -116,6 +119,7 @@ export default function CodeSpace() {
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ type: "tween", delay: 0.1 }}
+          viewport={{ once: true }}
           className="mb-10 pb-4 md:mb-32 "
         >
           <div className="py-4 text-left">
