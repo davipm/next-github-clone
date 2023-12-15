@@ -97,7 +97,7 @@ export default function CodeSpace() {
                   initial={{ opacity: 0, x: 30 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ type: "tween", delay: 0.1 }}
-                  className=" build-in-animate relative bottom-0 hidden max-w-[373px] overflow-hidden rounded-md sm:block"
+                  className="build-in-animate relative bottom-0 hidden max-w-[373px] overflow-hidden rounded-md sm:block"
                 >
                   <Image
                     src="/codespace/illo-ports.png"

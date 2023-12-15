@@ -1,13 +1,13 @@
 "use client";
 
-import { useState } from "react";
+// import { useState } from "react";
 import { motion } from "framer-motion";
 
 export default function Discount() {
-  const [hovered, setHovered] = useState(false);
+  // const [hovered, setHovered] = useState(false);
 
   return (
-    <div className="flex relative md:pl-10">
+    <div className="relative flex md:pl-10">
       <img
         src="https://github.githubassets.com/images/modules/site/home-campaign/bg-stars-1.webp"
         alt=""
@@ -15,8 +15,8 @@ export default function Discount() {
         width="2712"
         height="2712"
       />
-      <div className="flex items-center flex-row relative">
-        <motion.div initial={{ height: 0 }} whileInView={{ height: "100%" }} className="w-[3px] h-full increase1" />
+      <div className="relative flex flex-row items-center">
+        <motion.div initial={{ height: 0 }} whileInView={{ height: "100%" }} className="bg-increase-1 h-full w-[3px]" />
         <img
           src="https://github.githubassets.com/images/modules/site/home-campaign/git-branch-collaboration.svg"
           alt=""
@@ -29,15 +29,15 @@ export default function Discount() {
             maxWidth: "9vw",
             transitionDelay: "100ms",
           }}
-          className="hidden md:block absolute bottom-4 left-0"
+          className="absolute bottom-4 left-0 hidden md:block"
           loading="lazy"
           decoding="async"
         />
       </div>
 
-      <div className="lg:pl-24 md:pl-16 pl-6">
-        <div className="flex max-md:flex-col-reverse my-8 items-center lg:gap-x-5 sm:my-12 md:my-16 pb-6 md:pb-20 md:flex-row">
-          <div className="py-4 mb-2 w-full"></div>
+      <div className="pl-6 md:pl-16 lg:pl-24">
+        <div className="my-8 flex items-center pb-6 max-md:flex-col-reverse sm:my-12 md:my-16 md:flex-row md:pb-20 lg:gap-x-5">
+          <div className="mb-2 w-full py-4"></div>
         </div>
       </div>
     </div>
