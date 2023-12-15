@@ -1,11 +1,12 @@
+import Image from "next/image";
+import dynamic from "next/dynamic";
 import { GoCode, GoPlus } from "react-icons/go";
 import { FiMenu, FiLock } from "react-icons/fi";
-import { TfiReload } from "react-icons/tfi";
 import { FaGithub, FaRegBell } from "react-icons/fa";
+import { TfiReload } from "react-icons/tfi";
 
-import CodeBlock from "@/components/code-block";
+const CodeBlock = dynamic(() => import("../components/code-block"), { ssr: false });
 import ConsoleAnimated from "@/components/console-animated";
-import Image from "next/image";
 
 export default function CodeEditor() {
   return (
