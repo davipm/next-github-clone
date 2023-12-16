@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 import CodeEditor from "@/components/code-editor";
 import CodeSpace from "@/components/code-space";
+import CopillotFeature from "@/components/copillot-feature";
 
 export default function Productivity() {
   return (
@@ -66,6 +67,10 @@ export default function Productivity() {
 
       <CodeEditor />
       <CodeSpace />
+
+      <div className="relative z-10">
+        <CopillotFeature />
+      </div>
     </div>
   );
 }
