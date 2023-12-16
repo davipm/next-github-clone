@@ -73,7 +73,7 @@ export default function HoverCard({ children, backgroundColor, direction, left }
             background: backgroundColor,
             borderRadius: "100%",
             mixBlendMode: "soft-light",
-            left: left,
+            left,
             willChange: "transform",
             transition: "transform 0.2s cubic-bezier",
           }}
