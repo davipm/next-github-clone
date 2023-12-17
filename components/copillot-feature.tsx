@@ -1,6 +1,6 @@
 "use client";
 
-import HoverCard from "@/components/HoverCard";
+import HoverCard from "@/components/hover-card";
 
 const container = {
   hidden: { opacity: 0 },
