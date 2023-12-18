@@ -8,7 +8,10 @@ export default function Home() {
     <main>
       <Header />
 
-      <div className="overflow-hidden bg-hero-patter bg-cover bg-no-repeat" style={{ backgroundPosition: "63%" }}>
+      <div
+        className="overflow-hidden bg-code-space bg-no-repeat md:bg-hero-patter"
+        style={{ backgroundPositionX: "-1350px" }}
+      >
         <section id="hero" className="px-3">
           <Hero />
         </section>
