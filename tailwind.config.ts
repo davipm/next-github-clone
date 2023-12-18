@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        card: '0 3px 2px rgba(0,0,0,.04), 0 7px 5px rgba(0,0,0,.02), 0 13px 10px rgba(0,0,0,.02), 0 22px 17px rgba(0,0,0,.02)',
+      },
       backgroundImage: {
         increase:
           "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(88, 133, 91, 0.9) 25.52%, #4ead56 53.12%, rgba(99, 199, 107, 0.544444) 74.48%, rgba(0, 0, 0, 0) 100%)",
