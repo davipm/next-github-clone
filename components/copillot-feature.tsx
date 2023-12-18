@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
+import { useState } from "react";
+
 import HoverCard from "@/components/hover-card";
 
 const container = {
@@ -21,7 +22,6 @@ const item = {
 };
 
 export default function CopillotFeature() {
-  const [hovered, setHovered] = useState(false);
   const [showPy, setShowPy] = useState(true);
   const [showJs, setShowJs] = useState(false);
   const [showGo, setShowGo] = useState(false);
@@ -75,7 +75,7 @@ export default function CopillotFeature() {
               strokeLinecap="round"
             />
           </svg>
-          <div className="h-[2.5px]  w-0 origin-left scale-0 rounded-full bg-white transition duration-300 ease-in group-hover:w-11/12 group-hover:scale-100" />
+          <div className="h-[3px]  w-0 origin-left scale-0 rounded-full bg-white transition duration-300 ease-in group-hover:w-11/12 group-hover:scale-100" />
         </a>
       </div>
 
