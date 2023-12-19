@@ -88,7 +88,7 @@ export default function Hero() {
 
                 <button
                   type="button"
-                  className="home-campaign-signup-button mb-10 w-full select-none py-3 text-[16px] font-semibold text-white transition-all duration-300 hover:opacity-90 max-md:rounded-md md:mb-0 md:rounded-e-md"
+                  className="mb-10 w-full select-none bg-[#6e40c9] py-3 text-[16px] font-semibold text-white transition-all duration-300 hover:opacity-80 max-md:rounded-md md:mb-0 md:rounded-e-md"
                 >
                   Sign up for GitHub
                 </button>
