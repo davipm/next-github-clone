@@ -26,7 +26,6 @@ export default function CodeSpace() {
           width={81}
           height={485}
           className="absolute bottom-4 left-0 hidden h-auto max-w-[9vw] delay-100 md:block"
-          style={{ left: "calc(50% - 2px)" }}
         />
       </div>
 
@@ -62,15 +61,10 @@ export default function CodeSpace() {
 
                   <Image
                     src="/codespace/illo-cursor.png"
-                    alt="illo-cursor"
-                    className="js-build-in-item build-in-slideX-left build-in-animate absolute h-auto delay-200"
+                    alt="Cursor"
+                    className="absolute bottom-[23%] right-[20%] h-auto w-[30px] delay-200"
                     width={60}
                     height={96}
-                    style={{
-                      right: "20%",
-                      bottom: "23%",
-                      width: "30px",
-                    }}
                   />
                 </motion.div>
                 <motion.div

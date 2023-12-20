@@ -71,13 +71,20 @@ export default function Collaboration() {
         </motion.div>
       </div>
 
-      <Image
-        src="/issues-plan.png"
-        alt="Illustration of project table view with cards grouped by 'Feature planning' phase."
-        width={2500}
-        height={1500}
-        className="block h-auto w-full rounded-lg border border-[#30363d] italic"
-      />
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.3 }}
+        viewport={{ once: true }}
+      >
+        <Image
+          src="/issues-plan.png"
+          alt="Illustration of project table view with cards grouped by 'Feature planning' phase."
+          width={2500}
+          height={1500}
+          className="block h-auto w-full rounded-lg border border-[#30363d] italic"
+        />
+      </motion.div>
 
       {/* TODO: adding discount component */}
     </div>

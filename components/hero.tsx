@@ -24,7 +24,7 @@ export default function Hero() {
 
       <div className="flex">
         <div className="absolute">
-          <Image src="/lines-hero.svg" alt="lines hero" width={437} height={637} />
+          <Image src="/lines-hero.svg" alt="lines hero" width={437} height={637} priority />
 
           <div className="mx-auto my-3">
             <span className="relative z-10">
@@ -112,10 +112,17 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-5 py-4 xl:justify-between">
-              {logos.map(({ src, title }) => (
-                <div className="relative h-[44px] w-[150px]" key={title}>
+              {logos.map(({ src, title }, index) => (
+                <motion.div
+                  initial={{ opacity: 0, x: 100 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ delay: index * 0.2 }}
+                  viewport={{ once: true }}
+                  className="relative h-[44px] w-[150px]"
+                  key={title}
+                >
                   <Image src={src} alt={title} title={title} fill className="object-contain" />
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
