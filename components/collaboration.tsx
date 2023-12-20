@@ -76,7 +76,7 @@ export default function Collaboration() {
         alt="Illustration of project table view with cards grouped by 'Feature planning' phase."
         width={2500}
         height={1500}
-        className="block h-auto w-full rounded-lg border border-[#30363d]"
+        className="block h-auto w-full rounded-lg border border-[#30363d] italic"
       />
 
       {/* TODO: adding discount component */}
