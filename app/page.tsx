@@ -2,6 +2,7 @@ import Hero from "@/components/hero";
 import Footer from "@/components/footer";
 import Productivity from "@/components/productivity";
 import Header from "@/components/header";
+import Collaboration from "@/components/collaboration";
 
 export default function Home() {
   return (
@@ -19,6 +20,10 @@ export default function Home() {
         <section id="productivity" className="overflow-hidden px-4 pt-8">
           <Productivity />
         </section>
+
+        <div id="collaboration" className="overflow-hidden px-4 pt-8">
+          <Collaboration />
+        </div>
       </div>
 
       <Footer />
