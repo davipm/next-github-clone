@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Discount from "@/components/discount";
 
 const container = {
   hidden: { opacity: 0 },
@@ -86,7 +87,7 @@ export default function Collaboration() {
         />
       </motion.div>
 
-      {/* TODO: adding discount component */}
+      <Discount />
     </div>
   );
 }
