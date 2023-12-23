@@ -24,10 +24,10 @@ export default function Footer() {
 
             <div className="text-white">
               <h2 className="mt-6 text-base font-semibold">Subscribe to our newsletter</h2>
-              <p className="text-custom-gray mb-6 text-sm">Get product updates, company news, and more.</p>
+              <p className="mb-6 text-sm text-custom-gray">Get product updates, company news, and more.</p>
               <a
                 href="#"
-                className="border-gray-400 mb-6 rounded-lg border px-6 py-3 text-lg font-semibold transition duration-200 hover:opacity-80"
+                className="mb-6 rounded-lg border border-gray-400 px-6 py-3 text-lg font-semibold transition duration-200 hover:opacity-80"
               >
                 Subscribe
               </a>
@@ -208,44 +208,44 @@ export default function Footer() {
           <ul className="flex items-center max-md:mb-4">
             <li className="mr-4">
               <a href="#" aria-label="X" target="_blank">
-                <FaXTwitter size={22} className="text-gray-400 hover:text-gray-500 transition-colors duration-100" />
+                <FaXTwitter size={22} className="text-gray-400 transition-colors duration-100 hover:text-gray-500" />
               </a>
             </li>
             <li className="mr-4">
               <a href="#" aria-label="Facebook" target="_blank">
                 <FaFacebookSquare
                   size={22}
-                  className="text-gray-400 hover:text-gray-500 transition-colors duration-100"
+                  className="text-gray-400 transition-colors duration-100 hover:text-gray-500"
                 />
               </a>
             </li>
             <li className="mr-4">
               <a href="#" aria-label="Linkedin" target="_blank">
-                <FaLinkedinIn size={22} className="text-gray-400 hover:text-gray-500 transition-colors duration-100" />
+                <FaLinkedinIn size={22} className="text-gray-400 transition-colors duration-100 hover:text-gray-500" />
               </a>
             </li>
             <li className="mr-4">
               <a href="#" aria-label="Youtube" target="_blank">
-                <FaYoutube size={22} className="text-gray-400 hover:text-gray-500 transition-colors duration-100" />
+                <FaYoutube size={22} className="text-gray-400 transition-colors duration-100 hover:text-gray-500" />
               </a>
             </li>
             <li className="mr-4">
               <a href="#" aria-label="Twitch" target="_blank">
-                <FaTwitch size={22} className="text-gray-400 hover:text-gray-500 transition-colors duration-100" />
+                <FaTwitch size={22} className="text-gray-400 transition-colors duration-100 hover:text-gray-500" />
               </a>
             </li>
             <li className="mr-4">
               <a href="#" aria-label="TikTok" target="_blank">
-                <FaTiktok size={22} className="text-gray-400 hover:text-gray-500 transition-colors duration-100" />
+                <FaTiktok size={22} className="text-gray-400 transition-colors duration-100 hover:text-gray-500" />
               </a>
             </li>
             <li className="mr-4">
               <a href="#" aria-label="GitHub" target="_blank">
-                <FaGithub size={22} className="text-gray-400 hover:text-gray-500 transition-colors duration-100" />
+                <FaGithub size={22} className="text-gray-400 transition-colors duration-100 hover:text-gray-500" />
               </a>
             </li>
           </ul>
-          <ul className="text-custom-gray mb-4 flex flex-wrap items-center sm:mb-0">
+          <ul className="mb-4 flex flex-wrap items-center text-custom-gray sm:mb-0">
             <li className="mr-3">© {new Date().getFullYear()} GitHub, Inc.</li>
             <li className="mr-3">
               <a href="#" className="inline-block hover:underline">
