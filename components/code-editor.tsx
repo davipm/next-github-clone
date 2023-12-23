@@ -10,31 +10,31 @@ import ConsoleAnimated from "@/components/console-animated";
 
 export default function CodeEditor() {
   return (
-    <div className="bg-light-blue border-dark-blue relative overflow-hidden rounded-xl border shadow-2xl">
-      <div className="border-dark-blue flex items-center justify-between border-b p-4">
-        <div className="text-gray flex font-medium max-md:hidden">
+    <div className="relative overflow-hidden rounded-xl border border-dark-blue bg-light-blue shadow-2xl">
+      <div className="text-custom-gray flex items-center justify-between border-b border-dark-blue p-4">
+        <div className="flex font-medium max-md:hidden">
           <GoCode size={30} />
         </div>
-        <div className="bg-dark-black flex w-full items-center justify-between rounded-md border-[0.5px] border-[#30363d] px-2 py-1 md:w-auto">
-          <FiLock size={16} className="text-gray" />
+        <div className="flex w-full items-center justify-between rounded-md border border-dark-blue bg-dark-black px-2 py-1 md:w-auto">
+          <FiLock size={16} />
           <div className="overflow-hidden text-ellipsis whitespace-nowrap px-2 text-sm text-white md:px-8">
             https://github.com/davipm
           </div>
-          <TfiReload size={16} className="text-gray" />
+          <TfiReload size={16} />
         </div>
-        <div className="text-gray flex font-medium max-md:hidden">
+        <div className="flex font-medium max-md:hidden">
           <GoPlus size={30} />
         </div>
       </div>
 
       <div className="flex items-stretch">
-        <div className="border-dark-blue hidden border-r p-6 md:block">
-          <FiMenu size={30} className="text-gray" />
+        <div className="hidden border-r border-dark-blue p-6 md:block">
+          <FiMenu size={30} className="text-custom-gray" />
         </div>
         <div className="w-full min-w-0">
-          <div className="text-gray border-dark-blue border-b">
+          <div className="text-custom-gray border-b border-dark-blue">
             <ul className="flex px-3 pt-4">
-              <li className="bg-dark-black rounded-t-md px-3 py-2 text-gray-300">index.html</li>
+              <li className="text-gray-300 rounded-t-md bg-dark-black px-3 py-2">index.html</li>
               <li className="px-3 py-2">script.js</li>
               <li className="px-3 py-2">package.json</li>
             </ul>
@@ -52,9 +52,9 @@ export default function CodeEditor() {
               </div>
             </div>
           </div>
-          <div className="text-gray p-4">
+          <div className="text-custom-gray p-4">
             <ul className="mb-3 flex">
-              <li className="pr-3 text-gray-200">Terminal</li>
+              <li className="text-gray-200 pr-3">Terminal</li>
               <li className="pr-3">Output</li>
               <li className="pr-3">Problems</li>
               <li className="pr-3">Debug Console</li>
@@ -63,8 +63,8 @@ export default function CodeEditor() {
             <ConsoleAnimated />
           </div>
         </div>
-        <div className="border-dark-blue hidden w-full border-l md:block">
-          <div className="flex items-center justify-between px-4 pb-2 pt-[22px] text-gray-100">
+        <div className="hidden w-full border-l border-dark-blue md:block">
+          <div className="text-gray-100 flex items-center justify-between px-4 pb-2 pt-[22px]">
             <FiMenu size={25} />
             <FaGithub size={25} />
             <FaRegBell sieze={25} />

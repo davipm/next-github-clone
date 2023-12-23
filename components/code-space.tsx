@@ -39,7 +39,7 @@ export default function CodeSpace() {
               viewport={{ once: true }}
               className="md:pr-6"
             >
-              <h2 className="text-gray mb-4 w-full text-2xl max-lg:text-xl max-md:w-10/12 lg:w-full">
+              <h2 className="text-custom-gray mb-4 w-full text-2xl max-lg:text-xl max-md:w-10/12 lg:w-full">
                 <span className="font-semibold text-white">GitHub Codespaces</span> offers a complete dev environment in
                 seconds, so you can code, build, test, and open pull requests from any repo anywhere.
               </h2>
@@ -55,7 +55,7 @@ export default function CodeSpace() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ type: "tween" }}
-                  className="right-7 top-[-200px] z-[1] shadow-2xl sm:absolute"
+                  className="right-7 top-[-200px] z-10 shadow-2xl sm:absolute"
                 >
                   <Image src="/pic.png" alt="Pic" className="rounded-md" width={300} height={262} />
 
@@ -95,7 +95,7 @@ export default function CodeSpace() {
           className="mb-10 pb-4 md:mb-32 "
         >
           <div className="py-4 text-left">
-            <div className="relative z-[1] inline-block rounded-full border-2 border-[#7ee787] bg-gradient-to-r from-[#7ee787] to-[#aff5b4] bg-clip-text px-2 font-medium text-transparent">
+            <div className="relative z-10 inline-block rounded-full border-2 border-[#7ee787] bg-gradient-to-r from-[#7ee787] to-[#aff5b4] bg-clip-text px-2 font-medium text-transparent">
               <span className="text-[12px] font-semibold">Did you know?</span>
             </div>
             <h3 className="mb-2 mt-3 text-3xl font-medium text-[#7ee787] md:text-5xl lg:text-6xl">22% increase</h3>
