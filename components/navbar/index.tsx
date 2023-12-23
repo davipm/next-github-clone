@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { FaGithub } from "react-icons/fa";
 
+import { cn } from "@/lib/utils";
 import Container from "@/components/container";
 import ProductNav from "@/components/navbar/product-nav";
 import SolutionNav from "@/components/navbar/solution-nav";
@@ -33,28 +34,32 @@ export default function Navbar() {
               aria-label="Menu Button Mobile"
             >
               <div
-                className={`h-[2px] w-[23px] bg-white transition duration-150  ease-in ${
-                  showNav ? "mb-0 translate-y-[1px]  rotate-45" : "mb-1 rotate-0"
-                } `}
+                className={cn(
+                  "h-[2px] w-[23px] bg-white transition duration-150 ease-in",
+                  showNav ? "mb-0 translate-y-[2px] rotate-45" : "mb-1 rotate-0"
+                )}
               />
               <div
-                className={`h-[2px] w-[23px] bg-white transition duration-150 ease-in ${
-                  showNav ? "mb-0 hidden" : "mb-1"
-                } `}
+                className={cn(
+                  "mb-1 h-[2px] w-[23px] bg-white transition duration-150 ease-in",
+                  showNav && "mb-0 hidden"
+                )}
               />
               <div
-                className={`h-[2px] w-[23px] bg-white transition duration-150 ease-in  ${
+                className={cn(
+                  "h-[2px] w-[23px] bg-white transition duration-150 ease-in",
                   showNav ? "mb-0 -rotate-45" : "rotate-0"
-                }`}
+                )}
               />
             </button>
           </div>
           <div
-            className={`top-20 z-40 flex w-full transition duration-200 ease-in max-lg:absolute ${
+            className={cn(
+              "top-20 z-40 flex w-full transition duration-200 ease-in max-lg:absolute",
               showNav
                 ? "max-lg:translate-x-0 max-lg:scale-100"
                 : "max-lg:max-h-0 max-lg:translate-y-1/4 max-lg:scale-y-50"
-            }`}
+            )}
           >
             <div className="flex overflow-y-auto max-lg:max-h-[500px] max-lg:w-[320px] max-lg:flex-col max-lg:justify-between max-lg:rounded-lg max-lg:bg-white max-sm:mx-auto max-sm:w-10/12 sm:ml-auto  lg:mb-0 lg:w-full lg:items-center lg:justify-between">
               <nav className="mb-0 mt-0 px-3 text-[15.5px] max-lg:px-5 max-lg:py-10 lg:px-6">
