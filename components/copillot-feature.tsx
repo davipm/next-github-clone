@@ -49,7 +49,7 @@ export default function CopillotFeature() {
   return (
     <HoverCard backgroundColor="#7ee787" direction="" left="0">
       <div className="flex-1 flex-col justify-between p-8 sm:p-10 md:flex md:space-y-20 lg:py-16 lg:pl-16 lg:pr-32">
-        <p className="mb-6 text-xl font-medium text-[#7d8590] md:text-2xl">
+        <p className="text-gray mb-6 text-xl font-medium md:text-2xl">
           <span className="font-medium text-white">GitHub Copilot</span> is your AI pair programmer that empowers you to
           complete tasks 55% faster by turning natural language prompts into coding suggestions.
         </p>
@@ -61,12 +61,12 @@ export default function CopillotFeature() {
         <div className="mb-16 ml-3 mr-3 rounded-lg border border-[#30363d] bg-[#161b22] text-left text-[#161b22] shadow-card sm:ml-10 md:ml-0 md:mt-10">
           <div>
             <div className="mb-0 overflow-x-auto border-b border-[#30363d] px-2 pt-2">
-              <div className="flex items-center bg-[#161b22] text-[#7d8590]">
+              <div className="text-gray flex items-center bg-[#161b22]">
                 <button
                   type="button"
                   onClick={handlePyTab}
                   className={`flex items-center px-4 py-2 ${
-                    showPy ? "rounded-t-md border border-b-0 border-[#30363d] bg-[#0d1117] text-white" : ""
+                    showPy ? "bg-dark-black rounded-t-md border border-b-0 border-[#30363d]" : ""
                   }`}
                 >
                   <svg
@@ -88,7 +88,7 @@ export default function CopillotFeature() {
                   onClick={handleJsTab}
                   type="button"
                   className={`flex items-center px-4 py-2 ${
-                    showJs ? "rounded-t-md border border-b-0 border-[#30363d] bg-[#0d1117] text-white" : ""
+                    showJs ? "border-dark-blue bg-dark-black rounded-t-md border border-b-0" : ""
                   }`}
                 >
                   <svg
@@ -110,7 +110,7 @@ export default function CopillotFeature() {
                   onClick={handleGoTab}
                   type="button"
                   className={`flex items-center px-4 py-2 ${
-                    showGo ? "rounded-t-md border border-b-0 border-[#30363d] bg-[#0d1117] text-white" : ""
+                    showGo ? "bg-dark-black rounded-t-md border border-b-0 border-[#30363d]" : ""
                   } `}
                 >
                   <svg
@@ -130,7 +130,7 @@ export default function CopillotFeature() {
                 </button>
               </div>
             </div>
-            <div className={`relative bg-[#0d1117] p-4 ${showPy ? "" : "hidden"}`}>
+            <div className={`bg-dark-black relative p-4 ${showPy ? "" : "hidden"}`}>
               <div className="flex">
                 <div className="text-right text-[#6e7681]">
                   {Array.from({ length: 8 }, (_, index) => (
@@ -269,7 +269,7 @@ export default function CopillotFeature() {
                 </button>
               </div>
             </div>
-            <div className={`relative bg-[#0d1117] p-4 ${showJs ? "" : "hidden"}`}>
+            <div className={`bg-dark-black relative p-4 ${showJs ? "" : "hidden"}`}>
               <div className="flex">
                 <div className="text-right text-[#6e7681]">
                   {Array.from({ length: 7 }, (_, index) => (
@@ -411,7 +411,7 @@ export default function CopillotFeature() {
                 </button>
               </div>
             </div>
-            <div className={`relative bg-[#0d1117] p-4 ${showGo ? "" : "hidden"}`}>
+            <div className={`bg-dark-black relative p-4 ${showGo ? "" : "hidden"}`}>
               <div className="flex">
                 <div className="text-right text-[#6e7681]">
                   {Array.from({ length: 11 }, (_, index) => (

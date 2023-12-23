@@ -15,7 +15,6 @@ const calc = (x: number, y: number) => [-(y - window.innerHeight / 2) / 360, (x 
 const trans = (x: number, y: number) => `perspective(900px) rotate(${-x}deg) rotateY(${-y}deg)`;
 
 export default function HoverCard({ children, backgroundColor, direction, left }: Props) {
-  const [hovered, setHovered] = useState(false);
   const [cursorCoords, setCursorCoords] = useState({ x: 0, y: 0 });
 
   const [springProps, set] = useSpring(() => ({
@@ -33,12 +32,10 @@ export default function HoverCard({ children, backgroundColor, direction, left }
   const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
     const { clientX: x, clientY: y } = event;
     set({ xys: calc(x, y) });
-    setHovered(true);
   };
 
   const handleMouseLeave = () => {
     set({ xys: [0, 0, 1] });
-    setHovered(false);
   };
 
   const handleMousePosition = (event: MouseEvent) => {
@@ -56,7 +53,7 @@ export default function HoverCard({ children, backgroundColor, direction, left }
 
   return (
     <animated.div
-      className="mb-3 overflow-hidden rounded-xl md:mb-8"
+      className="group/animated mb-3 overflow-hidden rounded-xl md:mb-8"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={{ transform: springProps.xys.to(trans) }}
@@ -66,17 +63,11 @@ export default function HoverCard({ children, backgroundColor, direction, left }
       >
         {children}
         <div
-          className={`absolute bottom-[50px] z-[-1] h-[1000px] w-[500px] border-none bg-[#7ee787] blur-[180px] filter ${
-            hovered ? "opacity-95" : "opacity-0"
-          } `}
+          className="bg-animated absolute bottom-[50px] -z-10 h-[1000px] w-[500px] border-none bg-[#7ee787] opacity-0 blur-[180px] filter group-hover/animated:opacity-95"
           style={{
             transform: `translateX(${translateX}px) translateY(${2 * translateY}px)`,
             background: backgroundColor,
-            borderRadius: "100%",
-            mixBlendMode: "soft-light",
             left,
-            willChange: "transform",
-            transition: "transform 0.2s cubic-bezier",
           }}
         />
       </div>

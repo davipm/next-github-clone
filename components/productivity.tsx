@@ -80,7 +80,7 @@ export default function Productivity() {
         <div className="flex justify-between max-md:flex-col md:space-x-10">
           <HoverCard backgroundColor="#7ee787" direction="flex-col" left="0">
             <div className="flex-1 flex-col p-8 sm:p-10 md:flex lg:py-16 lg:pl-16 lg:pr-32">
-              <p className="mb-6 text-xl font-medium text-[#7d8590] md:text-2xl">
+              <p className="text-gray mb-6 text-xl font-medium md:text-2xl">
                 <span className="font-semibold text-white">GitHub Actions</span> automates your build, test, and
                 deployment workflow with simple and secure CI/CD.
               </p>
@@ -93,7 +93,7 @@ export default function Productivity() {
           </HoverCard>
           <HoverCard backgroundColor="#7ee787" direction="flex-col" left="-400px">
             <div className="flex-1 flex-col p-8 sm:p-10 md:flex lg:py-16 lg:pl-16 lg:pr-32">
-              <p className="mb-6 text-xl font-medium text-[#7d8590] md:text-2xl">
+              <p className="text-gray mb-6 text-xl font-medium md:text-2xl">
                 <span className="font-semibold text-white">GitHub Mobile</span> fits your projects in your pocket, so
                 you never miss a beat while on the go.
               </p>

@@ -39,7 +39,7 @@ export default function CodeSpace() {
               viewport={{ once: true }}
               className="md:pr-6"
             >
-              <h2 className="mb-4 w-full text-2xl text-[#7d8590] max-lg:text-[20px] max-md:w-10/12 lg:w-full">
+              <h2 className="text-gray mb-4 w-full text-2xl max-lg:text-xl max-md:w-10/12 lg:w-full">
                 <span className="font-semibold text-white">GitHub Codespaces</span> offers a complete dev environment in
                 seconds, so you can code, build, test, and open pull requests from any repo anywhere.
               </h2>

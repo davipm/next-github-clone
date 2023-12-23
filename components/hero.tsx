@@ -68,7 +68,7 @@ export default function Hero() {
             Let&apos;s build from&nbsp;here
           </h1>
 
-          <p className="relative z-10 mb-5 text-[24px] leading-[30px] text-[#7d8590] md:mb-12 md:w-10/12 md:text-[28px] md:leading-[36px] lg:w-9/12 lg:text-[32px] lg:leading-[44px]">
+          <p className="text-gray relative z-10 mb-5 text-[24px] leading-[30px] md:mb-12 md:w-10/12 md:text-[28px] md:leading-9 lg:w-9/12 lg:text-[32px] lg:leading-[44px]">
             Harnessed for productivity. Designed for collaboration. Celebrated for built-in security. Welcome to the
             platform developers&nbsp;love.
           </p>
@@ -99,7 +99,7 @@ export default function Hero() {
 
             <a
               href="#"
-              className="group flex w-full select-none items-center justify-center rounded-md border-[1.5px] border-[#ae88f9] px-5 py-3 text-[16px] text-white max-md:mt-4 md:w-auto"
+              className="group flex w-full select-none items-center justify-center rounded-md border-[1.5px] border-[#ae88f9] px-5 py-3 text-base text-white max-md:mt-4 md:w-auto"
             >
               Start a free enterprise trial
               <AnimatedArrow />
@@ -107,7 +107,7 @@ export default function Hero() {
           </div>
 
           <div className="my-24 md:my-32">
-            <p className="text-base leading-[24px] text-[#7d8590]">
+            <p className="text-gray text-base leading-[24px]">
               Trusted by the world&apos;s leading&nbsp;organizations&nbsp;↘︎
             </p>
 

@@ -8,6 +8,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        gray: '#7d8590',
+        secondary: '#ffa28b',
+        'dark-black': '#0d1117',
+        'dark-blue': '#30363d',
+        'light-blue': '#161b22',
+        'medium-blue': '#040d21',
+      },
       boxShadow: {
         card: '0 3px 2px rgba(0,0,0,.04), 0 7px 5px rgba(0,0,0,.02), 0 13px 10px rgba(0,0,0,.02), 0 22px 17px rgba(0,0,0,.02)',
       },

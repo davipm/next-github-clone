@@ -23,7 +23,7 @@ export default function ConsoleAnimated() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.5 }}
-      className="overflow-hidden whitespace-nowrap font-mono text-[14px] text-[#7d8590]"
+      className="text-gray overflow-hidden whitespace-nowrap font-mono text-sm"
       data-type-row-delay="50"
     >
       <motion.div variants={item} className="no-wrap js-type-row row-is-visible">

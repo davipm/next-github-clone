@@ -24,7 +24,7 @@ export default function Footer() {
 
             <div className="text-white">
               <h2 className="mt-6 text-base font-semibold">Subscribe to our newsletter</h2>
-              <p className="mb-6 text-sm text-[#7d8590]">Get product updates, company news, and more.</p>
+              <p className="text-gray mb-6 text-sm">Get product updates, company news, and more.</p>
               <a
                 href="#"
                 className="mb-6 rounded-lg border border-gray-400 px-6 py-3 text-lg font-semibold transition duration-200 hover:opacity-80"
@@ -35,7 +35,7 @@ export default function Footer() {
           </div>
 
           <div className="grid w-full grid-cols-2 justify-between gap-6 md:grid-cols-4 lg:flex">
-            <div className="text-[#7d8590]">
+            <div className="text-gray">
               <h2 className="mb-4 font-mono font-medium">Product</h2>
 
               <ul className="text-sm">
@@ -91,7 +91,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="text-[#7d8590]">
+            <div className="text-gray">
               <h2 className="mb-4 font-mono font-medium">Platform</h2>
 
               <ul className="text-sm">
@@ -117,7 +117,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="text-[#7d8590]">
+            <div className="text-gray">
               <h2 className="mb-4 font-mono font-medium">Product</h2>
 
               <ul className="text-sm">
@@ -158,7 +158,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="text-[#7d8590]">
+            <div className="text-gray">
               <h2 className="mb-4 font-mono font-medium">Company</h2>
 
               <ul className="text-sm">
@@ -245,7 +245,7 @@ export default function Footer() {
               </a>
             </li>
           </ul>
-          <ul className="mb-4 flex flex-wrap items-center text-[#7d8590] sm:mb-0">
+          <ul className="text-gray mb-4 flex flex-wrap items-center sm:mb-0">
             <li className="mr-3">© {new Date().getFullYear()} GitHub, Inc.</li>
             <li className="mr-3">
               <a href="#" className="inline-block hover:underline">
