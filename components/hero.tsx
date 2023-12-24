@@ -68,7 +68,7 @@ export default function Hero() {
             Let&apos;s build from&nbsp;here
           </h1>
 
-          <p className="text-custom-gray relative z-10 mb-5 text-[24px] leading-[30px] md:mb-12 md:w-10/12 md:text-[28px] md:leading-9 lg:w-9/12 lg:text-[32px] lg:leading-[44px]">
+          <p className="relative z-10 mb-5 text-[24px] leading-[30px] text-custom-gray md:mb-12 md:w-10/12 md:text-[28px] md:leading-9 lg:w-9/12 lg:text-[32px] lg:leading-[44px]">
             Harnessed for productivity. Designed for collaboration. Celebrated for built-in security. Welcome to the
             platform developers&nbsp;love.
           </p>
@@ -107,7 +107,7 @@ export default function Hero() {
           </div>
 
           <div className="my-24 md:my-32">
-            <p className="text-custom-gray text-base leading-[24px]">
+            <p className="text-base leading-[24px] text-custom-gray">
               Trusted by the world&apos;s leading&nbsp;organizations&nbsp;↘︎
             </p>
 
