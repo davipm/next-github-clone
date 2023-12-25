@@ -3,6 +3,7 @@ import Footer from "@/components/footer";
 import Productivity from "@/components/productivity";
 import Header from "@/components/header";
 import Collaboration from "@/components/collaboration";
+import Globe from "@/components/globe";
 
 export default function Home() {
   return (
@@ -23,6 +24,21 @@ export default function Home() {
 
         <div id="collaboration" className="overflow-hidden px-4 pt-8">
           <Collaboration />
+        </div>
+
+        <Globe />
+
+        <div className="relative z-20 mx-auto max-w-[1280px] px-5">
+          <ul className="space-y-1 pt-16 text-sm text-[#7d8590] lg:w-9/12">
+            <li>
+              <sup id="footnote-1">1</sup> The Total Economic Impact™ Of GitHub Enterprise Cloud and Advanced Security,
+              a commissioned study conducted by Forrester Consulting, 2022. Results are for a composite organization
+              based on interviewed customers.
+            </li>
+            <li>
+              <sup id="footnote-2">2</sup> GitHub, Octoverse 2022 The state of open source software.
+            </li>
+          </ul>
         </div>
       </div>
 

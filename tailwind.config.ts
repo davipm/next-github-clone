@@ -29,6 +29,7 @@ const config: Config = {
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "hero-patter": "url('/hero-bg.webp')",
         "code-space": "url('/bg-stars-1.webp')",
+        "footer-galaxy": "url('/footer-galaxy.webp')",
       },
     },
   },
