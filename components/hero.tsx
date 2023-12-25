@@ -37,8 +37,8 @@ export default function Hero() {
         </div>
 
         <div className="relative z-20 ml-4 mt-28 pt-32 max-md:px-4 md:ml-12">
-          <div className="group relative mb-[24px] md:top-20">
-            <a href="#" className="copilot inline-block rounded-full border border-neutral-600">
+          <div className="relative mb-[24px] md:top-20">
+            <a href="#" className="copilot group inline-block rounded-full border border-neutral-600">
               <div className="flex items-center p-3 px-5">
                 <Image
                   src="/eyebrow-banner-icon-copilot-x.svg"
@@ -57,7 +57,7 @@ export default function Hero() {
                   </div>
                 </div>
 
-                <div className="ml-auto">
+                <div className="ml-auto text-white">
                   <AnimatedArrow />
                 </div>
               </div>
