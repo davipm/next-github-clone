@@ -4,6 +4,7 @@ import Productivity from "@/components/productivity";
 import Header from "@/components/header";
 import Collaboration from "@/components/collaboration";
 import Globe from "@/components/globe";
+import Security from "@/components/security";
 
 export default function Home() {
   return (
@@ -24,6 +25,10 @@ export default function Home() {
 
         <div id="collaboration" className="overflow-hidden px-4 pt-8">
           <Collaboration />
+        </div>
+
+        <div id="security" className="overflow-hidden px-4 pb-16 pt-8">
+          <Security />
         </div>
 
         <Globe />

@@ -95,7 +95,7 @@ export default function Collaboration() {
         <div className="flex justify-between max-md:flex-col md:space-x-10">
           <HoverCard backgroundColor="#ffa28b" direction="flex-col" left="0">
             <div className="flex-1 flex-col p-8 sm:p-10 md:flex lg:py-16 lg:pl-16 lg:pr-32">
-              <p className="text-custom-gray mb-6 text-xl font-medium md:text-2xl">
+              <p className="mb-6 text-xl font-medium text-custom-gray md:text-2xl">
                 <span className="font-semibold text-white">GitHub Actions</span> automates your build, test, and
                 deployment workflow with simple and secure CI/CD.
               </p>
@@ -120,7 +120,7 @@ export default function Collaboration() {
           </HoverCard>
           <HoverCard backgroundColor="#ffa28b" direction="flex-col" left="-400px">
             <div className="flex-1 flex-col p-8 sm:p-10 md:flex lg:py-16 lg:pl-16 lg:pr-32">
-              <p className="text-custom-gray mb-6 text-xl font-medium md:text-2xl">
+              <p className="mb-6 text-xl font-medium text-custom-gray md:text-2xl">
                 <span className="font-semibold text-white">GitHub Mobile</span> fits your projects in your pocket, so
                 you never miss a beat while on the go.
               </p>
@@ -145,6 +145,348 @@ export default function Collaboration() {
           </HoverCard>
         </div>
       </div>
+
+      <HoverCard backgroundColor="#ffa28b" direction="" left="">
+        <div className="flex-1 flex-col justify-between p-10 py-20 md:flex md:space-y-20">
+          <p className="mb-6 text-xl font-medium text-[#7d8590] md:text-2xl">
+            <span className="font-medium text-white">GitHub Sponsors</span> lets you support your favorite open source
+            maintainers and projects.
+          </p>
+
+          <AnimatedLink label="Check out pull request" />
+        </div>
+        <div className="z-10 flex-1 overflow-hidden rounded-s-lg">
+          <motion.div
+            variants={container}
+            initial="hidden"
+            whileInView="show"
+            className="relative -right-6 -top-[120px] -mt-6 flex max-h-[480px] w-full -rotate-12  flex-wrap p-6"
+          >
+            <motion.div variants={item} transition={{ type: "tween" }} className="w-1/3 ">
+              <a
+                href=""
+                target="_blank"
+                className="m-2 flex flex-col items-center rounded-md border-[0.5px] border-[#30363d] bg-[#161b22] p-6"
+              >
+                <img
+                  alt="Homebrew avatar"
+                  width="96"
+                  height="96"
+                  className="d-block rounded-md"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://github.githubassets.com/images/modules/site/home-campaign/sponsors/homebrew.png"
+                />
+                <div className="my-2 text-[#7d8590]">Homebrew</div>
+                <button type="button" className=" rounded-md bg-[#21262d] ">
+                  <span className="flex items-center justify-between space-x-2 px-2 py-1">
+                    <svg
+                      aria-hidden="true"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="currentColor"
+                      version="1.1"
+                      width="16"
+                      data-view-component="true"
+                      className="octicon octicon-heart text-[#c9d1d9]"
+                    >
+                      <path d="m8 14.25.345.666a.75.75 0 0 1-.69 0l-.008-.004-.018-.01a7.152 7.152 0 0 1-.31-.17 22.055 22.055 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.066 22.066 0 0 1-3.744 2.584l-.018.01-.006.003h-.002ZM4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.58 20.58 0 0 0 8 13.393a20.58 20.58 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.749.749 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5Z"></path>
+                    </svg>
+                    <span className="Button-label text-[#c9d1d9]">Sponsor</span>
+                  </span>
+                </button>
+              </a>
+            </motion.div>
+            <motion.div variants={item} transition={{ type: "tween" }} className="w-1/3 ">
+              <a
+                href=""
+                target="_blank"
+                className="m-2  flex flex-col items-center rounded-md border-[0.5px] border-[#30363d] bg-[#161b22] p-6"
+              >
+                <img
+                  alt="Homebrew avatar"
+                  width="96"
+                  height="96"
+                  className=" rounded-md"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://github.githubassets.com/images/modules/site/home-campaign/sponsors/directus.png"
+                />
+                <div className="my-2 text-[#7d8590]">Directus</div>
+                <button type="button" className=" rounded-md bg-[#21262d] ">
+                  <span className="flex items-center justify-between space-x-2 px-2 py-1">
+                    <svg
+                      aria-hidden="true"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="currentColor"
+                      version="1.1"
+                      width="16"
+                      data-view-component="true"
+                      className="octicon octicon-heart text-[#c9d1d9]"
+                    >
+                      <path d="m8 14.25.345.666a.75.75 0 0 1-.69 0l-.008-.004-.018-.01a7.152 7.152 0 0 1-.31-.17 22.055 22.055 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.066 22.066 0 0 1-3.744 2.584l-.018.01-.006.003h-.002ZM4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.58 20.58 0 0 0 8 13.393a20.58 20.58 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.749.749 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5Z"></path>
+                    </svg>
+                    <span className="Button-label text-[#c9d1d9]">Sponsor</span>
+                  </span>
+                </button>
+              </a>
+            </motion.div>
+            <motion.div variants={item} transition={{ type: "tween" }} className="w-1/3 ">
+              <a
+                href=""
+                target="_blank"
+                className="m-2  flex flex-col items-center rounded-md border-[0.5px] border-[#30363d] bg-[#161b22] p-6"
+              >
+                <img
+                  alt="Homebrew avatar"
+                  width="96"
+                  height="96"
+                  className=" rounded-md"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://github.githubassets.com/images/modules/site/home-campaign/sponsors/dayhaysoos.jpeg"
+                />
+                <div className="my-2 text-[#7d8590]">Nick DeJesus</div>
+                <button type="button" className=" rounded-md bg-[#21262d] ">
+                  <span className="flex items-center justify-between space-x-2 px-2 py-1">
+                    <svg
+                      aria-hidden="true"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="currentColor"
+                      version="1.1"
+                      width="16"
+                      data-view-component="true"
+                      className="octicon octicon-heart text-[#c9d1d9]"
+                    >
+                      <path d="m8 14.25.345.666a.75.75 0 0 1-.69 0l-.008-.004-.018-.01a7.152 7.152 0 0 1-.31-.17 22.055 22.055 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.066 22.066 0 0 1-3.744 2.584l-.018.01-.006.003h-.002ZM4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.58 20.58 0 0 0 8 13.393a20.58 20.58 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.749.749 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5Z"></path>
+                    </svg>
+                    <span className="Button-label text-[#c9d1d9]">Sponsor</span>
+                  </span>
+                </button>
+              </a>
+            </motion.div>
+            <motion.div variants={item} transition={{ type: "tween" }} className="w-1/3 ">
+              <a
+                href=""
+                target="_blank"
+                className="m-2  flex flex-col items-center rounded-md border-[0.5px] border-[#30363d] bg-[#161b22] p-6"
+              >
+                <img
+                  alt="Homebrew avatar"
+                  width="96"
+                  height="96"
+                  className=" rounded-md"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://github.githubassets.com/images/modules/site/home-campaign/sponsors/imolorhe.jpeg"
+                />
+                <div className="my-2 text-[#7d8590]">Samuel</div>
+                <button type="button" className=" rounded-md bg-[#21262d] ">
+                  <span className="flex items-center justify-between space-x-2 px-2 py-1">
+                    <svg
+                      aria-hidden="true"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="currentColor"
+                      version="1.1"
+                      width="16"
+                      data-view-component="true"
+                      className="octicon octicon-heart text-[#c9d1d9]"
+                    >
+                      <path d="m8 14.25.345.666a.75.75 0 0 1-.69 0l-.008-.004-.018-.01a7.152 7.152 0 0 1-.31-.17 22.055 22.055 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.066 22.066 0 0 1-3.744 2.584l-.018.01-.006.003h-.002ZM4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.58 20.58 0 0 0 8 13.393a20.58 20.58 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.749.749 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5Z"></path>
+                    </svg>
+                    <span className="Button-label text-[#c9d1d9]">Sponsor</span>
+                  </span>
+                </button>
+              </a>
+            </motion.div>
+            <motion.div variants={item} transition={{ type: "tween" }} className="w-1/3 ">
+              <a
+                href=""
+                target="_blank"
+                className="m-2  flex flex-col items-center rounded-md border-[0.5px] border-[#30363d] bg-[#161b22] p-6"
+              >
+                <img
+                  alt="Homebrew avatar"
+                  width="96"
+                  height="96"
+                  className=" rounded-md"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://github.githubassets.com/images/modules/site/home-campaign/sponsors/commandpost.png"
+                />
+                <div className="my-2 text-[#7d8590]">CommandPost</div>
+                <button type="button" className=" rounded-md bg-[#21262d] ">
+                  <span className="flex items-center justify-between space-x-2 px-2 py-1">
+                    <svg
+                      aria-hidden="true"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="currentColor"
+                      version="1.1"
+                      width="16"
+                      data-view-component="true"
+                      className="octicon octicon-heart text-[#c9d1d9]"
+                    >
+                      <path d="m8 14.25.345.666a.75.75 0 0 1-.69 0l-.008-.004-.018-.01a7.152 7.152 0 0 1-.31-.17 22.055 22.055 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.066 22.066 0 0 1-3.744 2.584l-.018.01-.006.003h-.002ZM4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.58 20.58 0 0 0 8 13.393a20.58 20.58 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.749.749 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5Z"></path>
+                    </svg>
+                    <span className="Button-label text-[#c9d1d9]">Sponsor</span>
+                  </span>
+                </button>
+              </a>
+            </motion.div>
+            <motion.div variants={item} transition={{ type: "tween" }} className="w-1/3 ">
+              <a
+                href=""
+                target="_blank"
+                className="m-2  flex flex-col items-center rounded-md border-[0.5px] border-[#30363d] bg-[#161b22] p-6"
+              >
+                <img
+                  alt="Homebrew avatar"
+                  width="96"
+                  height="96"
+                  className="rounded-md"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://github.githubassets.com/images/modules/site/home-campaign/sponsors/kazupon.jpeg"
+                />
+                <div className="my-2 text-[#7d8590]">kazuya kawaguchi</div>
+                <button type="button" className=" rounded-md bg-[#21262d] ">
+                  <span className="flex items-center justify-between space-x-2 px-2 py-1">
+                    <svg
+                      aria-hidden="true"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="currentColor"
+                      version="1.1"
+                      width="16"
+                      data-view-component="true"
+                      className="octicon octicon-heart text-[#c9d1d9]"
+                    >
+                      <path d="m8 14.25.345.666a.75.75 0 0 1-.69 0l-.008-.004-.018-.01a7.152 7.152 0 0 1-.31-.17 22.055 22.055 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.066 22.066 0 0 1-3.744 2.584l-.018.01-.006.003h-.002ZM4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.58 20.58 0 0 0 8 13.393a20.58 20.58 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.749.749 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5Z"></path>
+                    </svg>
+                    <span className="Button-label text-[#c9d1d9]">Sponsor</span>
+                  </span>
+                </button>
+              </a>
+            </motion.div>
+            <motion.div variants={item} transition={{ type: "tween" }} className="w-1/3 ">
+              <a
+                href=""
+                target="_blank"
+                className="m-2 flex flex-col items-center rounded-md border-[0.5px] border-[#30363d] bg-[#161b22] p-6"
+              >
+                <img
+                  alt="Homebrew avatar"
+                  width="96"
+                  height="96"
+                  className="rounded-md"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://github.githubassets.com/images/modules/site/home-campaign/sponsors/prophen.jpeg"
+                />
+                <div className="my-2 text-[#7d8590]">Nikema</div>
+                <button type="button" className=" rounded-md bg-[#21262d] ">
+                  <span className="flex items-center justify-between space-x-2 px-2 py-1">
+                    <svg
+                      aria-hidden="true"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="currentColor"
+                      version="1.1"
+                      width="16"
+                      data-view-component="true"
+                      className="octicon octicon-heart text-[#c9d1d9]"
+                    >
+                      <path d="m8 14.25.345.666a.75.75 0 0 1-.69 0l-.008-.004-.018-.01a7.152 7.152 0 0 1-.31-.17 22.055 22.055 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.066 22.066 0 0 1-3.744 2.584l-.018.01-.006.003h-.002ZM4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.58 20.58 0 0 0 8 13.393a20.58 20.58 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.749.749 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5Z"></path>
+                    </svg>
+                    <span className="Button-label text-[#c9d1d9]">Sponsor</span>
+                  </span>
+                </button>
+              </a>
+            </motion.div>
+            <motion.div variants={item} transition={{ type: "tween" }} className="w-1/3 ">
+              <a
+                href=""
+                target="_blank"
+                className="m-2  flex flex-col items-center rounded-md border-[0.5px] border-[#30363d] bg-[#161b22] p-6"
+              >
+                <img
+                  alt="Homebrew avatar"
+                  width="96"
+                  height="96"
+                  className="rounded-md"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://github.githubassets.com/images/modules/site/home-campaign/sponsors/sindresorhus.jpeg"
+                />
+                <div className="my-2 text-[#7d8590]">sindresorhus</div>
+                <button type="button" className=" rounded-md bg-[#21262d] ">
+                  <span className="flex items-center justify-between space-x-2 px-2 py-1">
+                    <svg
+                      aria-hidden="true"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="currentColor"
+                      version="1.1"
+                      width="16"
+                      data-view-component="true"
+                      className="octicon octicon-heart text-[#c9d1d9]"
+                    >
+                      <path d="m8 14.25.345.666a.75.75 0 0 1-.69 0l-.008-.004-.018-.01a7.152 7.152 0 0 1-.31-.17 22.055 22.055 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.066 22.066 0 0 1-3.744 2.584l-.018.01-.006.003h-.002ZM4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.58 20.58 0 0 0 8 13.393a20.58 20.58 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.749.749 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5Z"></path>
+                    </svg>
+                    <span className="Button-label text-[#c9d1d9]">Sponsor</span>
+                  </span>
+                </button>
+              </a>
+            </motion.div>
+            <motion.div variants={item} transition={{ type: "tween" }} className="w-1/3 ">
+              <a
+                href=""
+                target="_blank"
+                className="m-2  flex flex-col items-center rounded-md border-[0.5px] border-[#30363d] bg-[#161b22] p-6"
+              >
+                <img
+                  alt="Homebrew avatar"
+                  width="96"
+                  height="96"
+                  className="rounded-md"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://github.githubassets.com/images/modules/site/home-campaign/sponsors/eslint.png"
+                />
+                <div className="my-2 text-[#7d8590]">ESLint</div>
+                <button type="button" className=" rounded-md bg-[#21262d] ">
+                  <span className="flex items-center justify-between space-x-2 px-2 py-1">
+                    <svg
+                      aria-hidden="true"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="currentColor"
+                      version="1.1"
+                      width="16"
+                      data-view-component="true"
+                      className="octicon octicon-heart text-[#c9d1d9]"
+                    >
+                      <path d="m8 14.25.345.666a.75.75 0 0 1-.69 0l-.008-.004-.018-.01a7.152 7.152 0 0 1-.31-.17 22.055 22.055 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.066 22.066 0 0 1-3.744 2.584l-.018.01-.006.003h-.002ZM4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.58 20.58 0 0 0 8 13.393a20.58 20.58 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.749.749 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5Z"></path>
+                    </svg>
+                    <span className="Button-label text-[#c9d1d9]">Sponsor</span>
+                  </span>
+                </button>
+              </a>
+            </motion.div>
+          </motion.div>
+        </div>
+      </HoverCard>
+
+      <motion.div
+        initial={{ height: 0 }}
+        whileInView={{ height: "160px" }}
+        transition={{ delay: 0.2 }}
+        className="-mt-[20px] ml-3 h-[160px] w-[3px] rounded-md bg-gradient-to-b from-transparent via-[#797ef9] to-[#abb4ff] md:ml-10"
+      />
     </div>
   );
 }
