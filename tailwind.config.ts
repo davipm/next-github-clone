@@ -18,6 +18,7 @@ const config: Config = {
       },
       boxShadow: {
         card: '0 3px 2px rgba(0,0,0,.04), 0 7px 5px rgba(0,0,0,.02), 0 13px 10px rgba(0,0,0,.02), 0 22px 17px rgba(0,0,0,.02)',
+        mktg: '0 2.74416px 2.74416px rgba(0,0,0,.0274351), 0 5.48831px 5.48831px rgba(0,0,0,.0400741), 0 13.7208px 10.9766px rgba(0,0,0,.0499982), 0 20.5812px 20.5812px rgba(0,0,0,.0596004), 0 41.1623px 41.1623px rgba(0,0,0,.0709366), 0 96.0454px 89.1851px rgba(0,0,0,.09)',
       },
       backgroundImage: {
         increase:

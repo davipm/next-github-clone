@@ -6,8 +6,8 @@ import { useSpring, animated } from "@react-spring/web";
 type Props = {
   children: ReactNode;
   backgroundColor: string;
-  direction: string;
-  left: string;
+  direction?: string;
+  left?: string;
 };
 
 const calc = (x: number, y: number) => [-(y - window.innerHeight / 2) / 360, (x - window.innerWidth / 2) / 240, 1.02];

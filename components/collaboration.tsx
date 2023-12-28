@@ -139,7 +139,7 @@ export default function Collaboration() {
         </div>
       </div>
 
-      <HoverCard backgroundColor="#ffa28b" direction="" left="">
+      <HoverCard backgroundColor="#ffa28b">
         <div className="flex-1 flex-col justify-between p-10 py-20 md:flex md:space-y-20">
           <p className="mb-6 text-xl font-medium text-[#7d8590] md:text-2xl">
             <span className="font-medium text-white">GitHub Sponsors</span> lets you support your favorite open source
@@ -181,6 +181,7 @@ export default function Collaboration() {
         initial={{ height: 0 }}
         whileInView={{ height: "160px" }}
         transition={{ delay: 0.2 }}
+        viewport={{ once: true }}
         className="-mt-[20px] ml-3 h-[160px] w-[3px] rounded-md bg-gradient-to-b from-transparent via-[#797ef9] to-[#abb4ff] md:ml-10"
       />
     </div>
