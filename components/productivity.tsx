@@ -4,7 +4,7 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 
-const CopillotFeature = dynamic(() => import("../components/copillot-feature"), { ssr: false });
+const CopilotFeature = dynamic(() => import("./copilot-feature"), { ssr: false });
 import CodeEditor from "@/components/code-editor";
 import CodeSpace from "@/components/code-space";
 import HoverCard from "@/components/hover-card";
@@ -73,14 +73,14 @@ export default function Productivity() {
       <CodeSpace />
 
       <div className="relative z-10">
-        <CopillotFeature />
+        <CopilotFeature />
       </div>
 
       <div className="flex items-center justify-between">
         <div className="flex justify-between max-md:flex-col md:space-x-10">
           <HoverCard backgroundColor="#7ee787" direction="flex-col" left="0">
             <div className="flex-1 flex-col p-8 sm:p-10 md:flex lg:py-16 lg:pl-16 lg:pr-32">
-              <p className="text-custom-gray mb-6 text-xl font-medium md:text-2xl">
+              <p className="mb-6 text-xl font-medium text-custom-gray md:text-2xl">
                 <span className="font-semibold text-white">GitHub Actions</span> automates your build, test, and
                 deployment workflow with simple and secure CI/CD.
               </p>
@@ -93,7 +93,7 @@ export default function Productivity() {
           </HoverCard>
           <HoverCard backgroundColor="#7ee787" direction="flex-col" left="-400px">
             <div className="flex-1 flex-col p-8 sm:p-10 md:flex lg:py-16 lg:pl-16 lg:pr-32">
-              <p className="text-custom-gray mb-6 text-xl font-medium md:text-2xl">
+              <p className="mb-6 text-xl font-medium text-custom-gray md:text-2xl">
                 <span className="font-semibold text-white">GitHub Mobile</span> fits your projects in your pocket, so
                 you never miss a beat while on the go.
               </p>

@@ -28,29 +28,13 @@ const item = {
   show: { opacity: 1, transition: { type: "tween" } },
 };
 
-export default function CopillotFeature() {
-  const [showPy, setShowPy] = useState(true);
-  const [showJs, setShowJs] = useState(false);
-  const [showGo, setShowGo] = useState(false);
+type TabOptions = "py" | "js" | "go";
+
+export default function CopilotFeature() {
+  const [activeTab, setActiveTab] = useState<TabOptions>("py");
   const [count, setCount] = useState(0);
 
-  const handlePyTab = () => {
-    setShowPy(true);
-    setShowGo(false);
-    setShowJs(false);
-  };
-
-  const handleJsTab = () => {
-    setShowPy(false);
-    setShowGo(false);
-    setShowJs(true);
-  };
-
-  const handleGoTab = () => {
-    setShowPy(false);
-    setShowGo(true);
-    setShowJs(false);
-  };
+  const handleTabChange = (tab: TabOptions) => setActiveTab(tab);
 
   return (
     <HoverCard backgroundColor="#7ee787" left="0">
@@ -69,32 +53,32 @@ export default function CopillotFeature() {
             <div className="flex items-center bg-[#161b22] text-custom-gray">
               <button
                 type="button"
-                onClick={handlePyTab}
+                onClick={() => handleTabChange("py")}
                 className={cn(
                   "flex items-center px-4 py-2",
-                  showPy && "rounded-t-md border border-b-0 border-[#30363d] bg-dark-black"
+                  activeTab === "py" && "rounded-t-md border border-b-0 border-[#30363d] bg-dark-black"
                 )}
               >
                 <FaPython size={22} className="mr-2" />
                 <span>draw_scatterplot.py</span>
               </button>
               <button
-                onClick={handleJsTab}
+                onClick={() => handleTabChange("js")}
                 type="button"
                 className={cn(
                   "flex items-center px-4 py-2",
-                  showJs && "rounded-t-md border border-b-0 border-dark-blue bg-dark-black"
+                  activeTab === "js" && "rounded-t-md border border-b-0 border-dark-blue bg-dark-black"
                 )}
               >
                 <IoLogoJavascript size={22} className="mr-2" />
                 <span>time.js</span>
               </button>
               <button
-                onClick={handleGoTab}
+                onClick={() => handleTabChange("go")}
                 type="button"
                 className={cn(
                   "flex items-center px-4 py-2",
-                  showGo && "rounded-t-md border border-b-0 border-[#30363d] bg-dark-black"
+                  activeTab === "go" && "rounded-t-md border border-b-0 border-[#30363d] bg-dark-black"
                 )}
               >
                 <FaGolang size={22} className="mr-2" />
@@ -102,7 +86,7 @@ export default function CopillotFeature() {
               </button>
             </div>
           </div>
-          <div className={cn("relative bg-dark-black p-4", !showPy && "hidden")}>
+          <div className={cn("relative bg-dark-black p-4", activeTab !== "py" && "hidden")}>
             <div className="flex">
               <div className="text-right text-[#6e7681]">
                 {Array.from({ length: 8 }, (_, index) => (
@@ -215,7 +199,7 @@ export default function CopillotFeature() {
               </button>
             </div>
           </div>
-          <div className={cn("relative bg-dark-black p-4", !showJs && "hidden")}>
+          <div className={cn("relative bg-dark-black p-4", activeTab !== "js" && "hidden")}>
             <div className="flex">
               <div className="text-right text-[#6e7681]">
                 {Array.from({ length: 7 }, (_, index) => (
@@ -331,7 +315,7 @@ export default function CopillotFeature() {
               </button>
             </div>
           </div>
-          <div className={cn("relative bg-dark-black p-4", !showGo && "hidden")}>
+          <div className={cn("relative bg-dark-black p-4", activeTab !== "go" && "hidden")}>
             <div className="flex">
               <div className="text-right text-[#6e7681]">
                 {Array.from({ length: 11 }, (_, index) => (
