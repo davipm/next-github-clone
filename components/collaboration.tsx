@@ -163,7 +163,7 @@ export default function Collaboration() {
                   className="m-2 flex flex-col items-center rounded-md border border-[#30363d] bg-[#161b22] p-6"
                 >
                   <Image src={src} alt={name} width={96} height={96} className="block rounded-md" />
-                  <div className="my-2 text-[#7d8590]">{name}</div>
+                  <p className="my-2 text-[#7d8590]">{name}</p>
                   <button type="button" className="rounded-md bg-[#21262d] text-[#c9d1d9]">
                     <span className="flex items-center justify-between space-x-2 px-2 py-1">
                       <IoMdHeartEmpty size={20} />
