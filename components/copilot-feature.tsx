@@ -161,14 +161,14 @@ export default function CopilotFeature() {
                       <span className="pl-s">&ldquo;Scatter Plot&ldquo;</span>)
                     </span>
                   </pre>
-                  <pre className=" bg-[#388bfd1a]">
+                  <pre className="bg-[#388bfd1a]">
                     <span>
                       {" "}
                       <span className="pl-s1">plt</span>.<span className="pl-en">xlabel</span>(
                       <span className="pl-s">&ldquo;x values&ldquo;</span>)
                     </span>
                   </pre>
-                  <pre className=" bg-[#388bfd1a]">
+                  <pre className="bg-[#388bfd1a]">
                     <span>
                       {" "}
                       <span className="pl-s1">plt</span>.<span className="pl-en">ylabel</span>(
@@ -188,7 +188,7 @@ export default function CopilotFeature() {
                 </motion.div>
               </div>
             </div>
-            <div className="absolute bottom-[-60px] left-0  z-[1] mb-5 flex w-full items-center justify-center">
+            <div className="absolute bottom-[-60px] left-0 z-10 mb-5 flex w-full items-center justify-center">
               <button
                 onClick={() => setCount(count + 1)}
                 type="button"
