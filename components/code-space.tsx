@@ -90,9 +90,9 @@ export default function CodeSpace() {
           viewport={{ once: true }}
           className="mb-10 py-4 pb-4 text-left md:mb-32"
         >
-          <div className="relative z-10 inline-block rounded-full border-2 border-[#7ee787] bg-gradient-to-r from-[#7ee787] to-[#aff5b4] bg-clip-text px-2 font-medium text-transparent">
-            <span className="text-[12px] font-semibold">Did you know?</span>
-          </div>
+          <h4 className="relative z-10 inline-block rounded-full border-2 border-[#7ee787] bg-gradient-to-r from-[#7ee787] to-[#aff5b4] bg-clip-text px-2 text-[12px] font-semibold text-transparent">
+            Did you know?
+          </h4>
           <h3 className="mb-2 mt-3 text-3xl font-medium text-[#7ee787] md:text-5xl lg:text-6xl">22% increase</h3>
           <p className="mb-3 text-base font-medium text-white md:text-xl">
             in developer productivity <br /> after three years with GitHub<sup>1</sup>
