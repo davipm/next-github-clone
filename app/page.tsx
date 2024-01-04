@@ -5,11 +5,13 @@ import Header from "@/components/header";
 import Collaboration from "@/components/collaboration";
 import Globe from "@/components/globe";
 import Security from "@/components/security";
+import StickNav from "@/components/navbar/stick-nav";
 
 export default function Home() {
   return (
     <main>
       <Header />
+      <StickNav />
 
       <div
         className="overflow-hidden bg-code-space bg-no-repeat md:bg-hero-patter"

@@ -33,7 +33,7 @@ export default function Discount() {
               viewport={{ once: true }}
               className="md:pr-6"
             >
-              <h2 className="text-custom-gray mb-4 w-full text-2xl max-lg:text-[20px] max-md:w-10/12 lg:w-full">
+              <h2 className="mb-4 w-full text-2xl text-custom-gray max-lg:text-[20px] max-md:w-10/12 lg:w-full">
                 <span className="font-semibold text-white">GitHub Issues and GitHub Projects</span> supply flexible
                 project management tools that adapt to your team alongside your code.
               </h2>
@@ -71,9 +71,9 @@ export default function Discount() {
           className="mb-10 pb-4 md:mb-32"
         >
           <div className="py-4 text-left">
-            <div className="relative z-10 inline-block rounded-full border-2 border-[#ffc2b2] bg-gradient-to-r from-[#ffa28b] to-[#ffc2b2] bg-clip-text px-2 font-medium text-transparent">
-              <span className="text-[12px] font-semibold">Did you know?</span>
-            </div>
+            <h4 className="relative z-10 inline-block rounded-full border-2 border-[#ffc2b2] bg-gradient-to-r from-[#ffa28b] to-[#ffc2b2] bg-clip-text px-2 text-[12px] font-semibold text-transparent">
+              Did you know?
+            </h4>
             <h3 className="mb-2 mt-3 text-3xl font-medium text-secondary md:text-5xl lg:text-6xl">80% reduction</h3>
             <p className="mb-3 text-base font-medium text-white md:text-xl">
               in onboarding time with GitHub <sup>1</sup>
