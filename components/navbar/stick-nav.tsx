@@ -31,29 +31,28 @@ export default function StickNav() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      if (scrollTop > 100) setIsStick(true);
-      else setIsStick(false);
+      setIsStick(scrollTop > 100);
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
-    function isElementVisible() {
-      const productivity = document.getElementById("productivity")?.getBoundingClientRect().top;
-      const collaboration = document.getElementById("collaboration")?.getBoundingClientRect().top;
-      const security = document.getElementById("security")?.getBoundingClientRect().top;
+    const isElementVisible = (elementId: string) => {
+      const element = document.getElementById(elementId);
+      const top = element?.getBoundingClientRect().top;
+      if (top && top < 100) setActive(elementId);
+    };
 
-      if (productivity && productivity < 100) setActive("productivity");
-      if (collaboration && collaboration < 100) setActive("collaboration");
-      if (security && security < 100) setActive("security");
-    }
+    const handleScrollForElements = () => {
+      isElementVisible("productivity");
+      isElementVisible("collaboration");
+      isElementVisible("security");
+    };
 
-    window.addEventListener("scroll", isElementVisible);
-
-    return () => window.removeEventListener("scroll", isElementVisible);
+    window.addEventListener("scroll", handleScrollForElements);
+    return () => window.removeEventListener("scroll", handleScrollForElements);
   }, []);
 
   return (
